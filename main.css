@@ -1,0 +1,296 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#navigation {
+	position: fixed;
+	padding-top: 21px;
+	background-color: rgba(1, 1, 1, 1.0);
+	width: 100%;
+	z-index: 100;
+	top: 0;
+}
+	
+	#navigation img {
+		margin-top:-18px;
+		margin-left:3px;
+		width: 50px;
+		height: auto;
+	}
+
+	#navigation nav {
+		height: 36px;
+		float: right;
+		padding-right:20px;
+	}
+
+	#navigation nav a {
+		font-weight: 400;
+		font-size: 0.9em;
+		padding: 0px 12px 0px 12px;
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		transition: .3s;
+		letter-spacing: 0.075em;
+	}
+
+	#navigation nav a:hover {
+		color: rgba(255, 160, 122, 1.0);
+	}
+
+.maincontainer{
+	top: 0;
+	width: 100%;
+	min-height: 400px;
+	height: auto;
+	position: relative;
+	background-color: white;
+	margin: 0;
+}
+
+#colcontainer {
+	padding: 3%;
+}
+
+#dividercontainer {
+	background: white;
+	width: 100%;
+	position: relative;
+	height: 50px;
+}
+
+.divider {
+	width:30%;
+	height: 1px;
+	background-color: rgba(75, 75, 75, 0.4);
+	left: 36%;
+	top: 50%;
+	position: absolute;
+}
+
+
+#landing {
+	background: url(images/background2.jpg) 50% 0 fixed repeat;
+	height: 105vh;
+	position: relative;
+	z-index: -1;
+}
+
+/*logo*/
+
+#logo {
+	background-color: transparent;
+	height: 100vh;
+	margin-top: -100vh;
+}
+
+	#mainlogo {
+		top: 50%;
+		left: 50%;
+		margin: -239px 0 0 -170px;
+		position: absolute;
+	}
+
+
+/*about*/
+
+#about {
+	text-align: center;
+	-webkit-box-shadow: 0px -7px 6px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow:    0px -7px 6px rgba(50, 50, 50, 0.1);
+    box-shadow:         0px -7px 6px rgba(50, 50, 50, 0.1);
+    transition: 0.2s;
+}
+
+	#headercontainer {
+		padding-top: 80px;
+		width: 100%;
+	}
+
+	#header {
+		font-size: 2.3em;
+		font-weight: 700;
+		color: rgba(75, 75, 75, 1.0);
+		letter-spacing: 0.1em;
+	}
+
+	#about #circle {
+		margin: 0 auto;
+		width: 60%;
+		margin-bottom: 5px;
+		transition: 0.2s;
+	}
+
+	.body {
+		padding-top: 20px;
+	}
+
+	.body a {
+		font-family: 'Merriweather', serif;
+		color: rgba(1, 1, 1, 0.8);
+		font-weight: 400;
+		letter-spacing: 0.25px;
+		font-size: 0.9em;
+	}
+
+	#aboutbody strong {
+		font-size: 1.1em;
+		transition: 0.2s;
+	}
+
+	#about:hover #circle {
+		opacity: 0.8;
+	}
+
+	#about:hover #aboutbody {
+		transition: 0.2s;
+	}
+
+	#aboutcol:hover #aboutbody {
+		opacity: 1.0;
+	}
+
+	#aboutcol:hover #circle {
+		opacity: 1.0;
+	}
+
+/*design*/
+
+#design {
+	padding-top: 15px;
+}
+
+	#designtxt {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#design #desc {
+		font-family: 'Merriweather', serif;
+		font-weight: 300;
+		font-size: 1.0em;
+		line-height: 140%;
+	}
+
+	#fourbyfour:hover {
+		cursor: url(images/pluscursor.png), pointer;
+	}
+
+	#fourbyfour img {
+		width: 100%;
+		margin-top: -4px;
+		transition: 0.2s;
+		-webkit-backface-visibility: hidden;
+	}
+
+	#fourbyfour img:hover {
+		opacity: 0.5;
+	}
+
+	#fourbyfour .col {
+		margin: 1% 0 1% 0;
+	}
+
+	#blah {
+		background-color: grey;
+		height: 600px;
+		position: absolute;
+		z-index: 99;
+	}
+
+	#rectangleimg {
+		width: 100%;
+		height: auto;
+	}
+
+#projects #headercontainer {
+	text-align: center;
+	margin-top: -20px;
+}
+
+	#projects .body {
+		text-align: left;
+	}
+
+#contact {
+	background-color: rgba(30, 30, 30, 1.0);
+}
+
+	#contact #header {
+		font-weight: 400;
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	#contact #headercontainer1 {
+		padding-left: 5%;
+		padding-top: 5%;
+	}
+
+	#contact #contactform {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#contact img {
+		width: 100%;
+		height: auto;
+	}
+
+	#me {
+		margin: 0 auto;
+		width: 60%;
+	}
+
+#footercontainer {
+	background-color: black;
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+
+	#name {
+		padding-left: 5%;
+		float: left;
+		top: 50%;
+		margin-top: -8px;
+		position: absolute;
+	}
+
+	#name a {
+		font-size: 1.0em;
+		letter-spacing: 0.25em;
+		color: rgba(255, 255, 255, 0.5);
+		transition: 0.4s;
+	}
+
+	#name a:hover {
+		color: rgba(255, 160, 122, 1.0);
+	}
+
+	#iconcontainer {
+		width: auto;
+		height: 38px;
+		right: 0;
+		padding-right: 5%;
+		margin-top: -23px;
+		top: 50%;
+		position: absolute;
+	}
+
+	#iconcontainer div {
+		float: left;
+	}
+
+	#icon {
+		padding: 5px;
+		transition: .4s;
+		opacity: 0.5;
+	}
+
+	#icon:hover {
+		opacity: 1.0;
+	}

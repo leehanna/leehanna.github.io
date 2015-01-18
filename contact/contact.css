@@ -1,0 +1,138 @@
+/*
+Contact Form by html-form-guide.com
+You can customize all the aspects of the form in this style sheet
+All the style elements use form id selector(notice the #contactus). So, including this
+stylesheet does not affect the other elements at all!
+*/
+
+#contactus {
+  outline: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+#contactus #lblcontainer {
+  margin-bottom: 7px;
+}
+
+#contactus label
+{
+   font-family : 'Montserrat', sans-serif;
+   font-size:1.0em;
+   color: white;
+   letter-spacing: 1px;
+}
+
+#contactus input[type="text"],textarea
+{
+  font-family : 'Montserrat', Verdana, sans-serif;
+  font-size: 1.0em;
+  font-weight: 400;
+  line-height:140%;
+  color : white; 
+  padding : 10px; 
+  border: 0;
+  background-color: rgba(75, 75, 75, 1.0);
+  transition: .2s;
+}
+
+#contactus #message {
+  margin-top: -15px;
+}
+
+#contactus input[type="text"]
+{
+  height:23px;
+  width:400px;
+  margin-bottom: 5px;
+  transition: .2s;
+}
+
+#contactus input[type="submit"]
+{
+   margin-top: 15px;
+   width:100px;
+   height:50px;
+   padding-left:0px;
+   background-color: white;
+   border: 0;
+   font-family: 'Montserrat', serif;
+   letter-spacing: 1px;
+   transition: .2s;
+}
+
+#contactus input[type="submit"]:hover {
+  background-color: rgba(255, 160, 122, 1.0);
+  color: white;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#contactus input[type="submit"]:focus {
+  outline: 0;
+  background-color: rgba(255, 160, 122, 0.8);
+  color: white;
+}
+
+#contactus textarea
+{
+  height:120px;
+  width:400px;
+}
+
+#contactus input[type="text"]:focus,textarea:focus
+{
+  color : white;
+  background-color : rgba(255, 160, 122, 1.0);
+  outline:0;
+}
+
+#contactus .container
+{
+   margin-top:8px;
+   margin-bottom: 10px;
+}
+
+#contactus .error
+{
+   font-family: 'Montserrat', sans-serif; 
+   font-size: 0.7em;
+   color: rgba(255, 160, 122, 1.0);
+}
+
+#contactus fieldset#antispam
+{
+   padding:2px;
+   border-top:1px solid #EEE;
+   border-left:0;
+   border-right:0;
+   border-bottom:0;
+   width:350px;
+}
+
+#contactus fieldset#antispam legend
+{
+   font-family : 'Montserrat', sans-serif;
+   font-size: 0.8em;
+   color:rgba(255, 160, 122, 1.0);   
+}
+
+/* spam_trap: This input is hidden. This is here to trick the spam bots*/
+#contactus .spmhidip
+{
+   display:none;
+   width:10px;
+   height:3px;
+}
+#fg_crdiv
+{
+   font-family : Arial, sans-serif;
+   font-size: 0.3em;
+   opacity: .2;
+   -moz-opacity: .2;
+   filter: alpha(opacity=20);   
+}
+#fg_crdiv p
+{
+    display:none;
+}
