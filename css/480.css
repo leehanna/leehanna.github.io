@@ -1,8 +1,4 @@
 /*  MAKE LAYOUT RESPONSIVE at 480px FOR IPHONE LANDSCAPE ============================================ */
-	
-	.maincontainer {
-		background-color: white;
-	}
 
 	#desccontainer {
 		text-align: center;
@@ -15,6 +11,16 @@
 
 	#navlogo {
 		display: none;
+	}
+
+	#navigation {
+		padding-top: 10px;
+	}
+
+	#navigation nav {
+		padding: 0;
+		margin: 0 auto;
+		height: 30px;
 	}
 
 	#footercontainer #name a {
