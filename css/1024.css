@@ -1,0 +1,25 @@
+/*  MAKE LAYOUT RESPONSIVE at 1024px FOR SMALLER SCREENS ================================================================ */
+
+		.maincontainer {
+			background-color: grey;
+		}
+
+		#designtxtcontainer {
+			width: 100%;
+		}
+
+		#desccontainer {
+			width: 400px;
+			margin: 0 auto;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+
+		#designheadercontainer {
+			width: 100%;
+			text-align: center;
+		}
+
+		.span_1_of_6 {
+			width: 23.8%; 
+		}

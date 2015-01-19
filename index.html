@@ -28,9 +28,9 @@
 	<link rel="stylesheet" href="css/animate.css">
 
 	<!-- Responsive Stylesheets -->
-	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
-	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
-	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="css/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="css/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/480.css">
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
 	<script src="js/modernizr-2.5.3-min.js"></script>
@@ -42,14 +42,15 @@
 
 <body>
 	<div class="animated fadeInDown" id="navigation">
-		<a href="#"><img src="images/Snail1.png" id="logo"></a>
-		<nav>
-			<a href="#" onclick="$('body').animatescroll();">HOME</a>
-			<a href="#" onclick="$('#about').animatescroll();">ABOUT</a>
-			<a href="#" onclick="$('#aboutdesigndiv').animatescroll();">DESIGN</a>
-			<a href="#" onclick="$('#designprojectsdiv').animatescroll({padding:50});">PROJECTS</a>
-			<a href="#" onclick="$('#contact').animatescroll();">CONTACT</a>
-		</nav>
+		<div id="navigationcontent">
+			<a href="#"><img src="images/Snail1.png" id="navlogo"></a>
+			<nav>
+				<a href="#" onclick="$('body').animatescroll();">HOME</a>
+				<a href="#" onclick="$('#about').animatescroll();">ABOUT</a>
+				<a href="#" onclick="$('#aboutdesigndiv').animatescroll();">DESIGN</a>
+				<a href="#" onclick="$('#designprojectsdiv').animatescroll({padding:50});">PROJECTS</a>
+			</nav>
+		</div>
 	</div>
 	<section class="maincontainer" id="landing" data-type="background" data-speed="2"></section>
 	<div class="maincontainer" id="logo">
@@ -109,10 +110,10 @@
 
 	<div class="maincontainer" id="design">
 		<div class="section group" id="colcontainer">
-			<div class="col span_2_of_6" id="onefour">
+			<div class="col span_2_of_6" id="designtxtcontainer">
 				<div id="designtxt">
-					<div class="wow fadeInUp" data-wow-duration="1.5s"><a id="header">DESIGN</a></div>
-					<div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"><a id="desc"><br/><br/>Here are various design projects I did for school clubs, a student job, an internship, and a non-profit.<br/><br/>I fell in love with design in high school and have been avidly exploring this area ever since. So far, I have gotten my hands dirty designing magazine layouts, flyers, logos, website mockups, and apparel. In the future, I hope to learn more about user interface and user experience design.</a></div>
+					<div class="wow fadeInUp" data-wow-duration="1.5s" id="designheadercontainer"><a id="header">DESIGN</a></div>
+					<div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s" id="desccontainer"><a id="desc"><br/><br/>Here are various design projects I did for school clubs, a student job, an internship, and a non-profit.<br/><br/>I fell in love with design in high school and have been avidly exploring this area ever since. So far, I have gotten my hands dirty designing magazine layouts, flyers, logos, website mockups, and apparel. In the future, I hope to learn more about user interface and user experience design.</a></div>
 				</div>
 			</div>
 			<div id="fourbyfour">

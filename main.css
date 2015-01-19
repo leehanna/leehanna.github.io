@@ -25,7 +25,7 @@ body {
 	}
 
 	#navigation nav {
-		height: 36px;
+		height: 43px;
 		float: right;
 		padding-right:20px;
 	}
@@ -52,6 +52,7 @@ body {
 	position: relative;
 	background-color: white;
 	margin: 0;
+	padding: 0;
 }
 
 #colcontainer {
@@ -127,6 +128,10 @@ body {
 		transition: 0.2s;
 	}
 
+	#about .span_1_of_3 {
+		padding-bottom: 30px;
+	}
+
 	.body {
 		padding-top: 20px;
 	}
@@ -176,6 +181,11 @@ body {
 		font-weight: 300;
 		font-size: 1.0em;
 		line-height: 140%;
+	}
+
+	#fourbyfour {
+		padding: 0;
+		margin: 0;
 	}
 
 	#fourbyfour:hover {
