@@ -183,10 +183,6 @@ body {
 		line-height: 140%;
 	}
 
-	#fourbyfour {
-		padding: 0;
-		margin: 0;
-	}
 
 	#fourbyfour:hover {
 		cursor: url(images/pluscursor.png), pointer;
@@ -208,10 +204,11 @@ body {
 	}
 
 	#blah {
+		width: 100%;
+		opacity: 50%;
 		background-color: grey;
-		height: 600px;
-		position: absolute;
 		z-index: 99;
+		clear: none;
 	}
 
 	#rectangleimg {
