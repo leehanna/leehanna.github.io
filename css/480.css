@@ -26,3 +26,7 @@
 	#footercontainer #name a {
 		font-size: 0.6em;
 	}
+
+	#dialogg {
+		display:none;
+	}

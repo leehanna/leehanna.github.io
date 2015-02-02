@@ -15,6 +15,8 @@ body {
 	top: 0;
 	-webkit-animation-duration: 0.5s;
   	-webkit-animation-delay: 1.5s;
+  	-moz-animation-duration: 0.5s;
+  	-moz-animation-delay: 1.5s;
 }
 	
 	#navigation img {
@@ -96,6 +98,36 @@ body {
 		left: 50%;
 		margin: -239px 0 0 -170px;
 		position: absolute;
+	}
+
+	#downarrow {
+		position: absolute;
+		margin: 0 auto;
+		left: 50%;
+		top: 85%;
+		margin-left: -32.5px;
+		-webkit-animation-delay: 2s;
+		-webkit-animation-name: Floatingx;
+	    -webkit-animation-duration: 1.5s;
+	    -webkit-animation-iteration-count: 4;
+	    -webkit-animation-timing-function: ease-in-out;
+	    -moz-animation-delay: 2s;
+	    -moz-animation-name: Floating;
+	    -moz-animation-duration: 1.5s;
+	    -moz-animation-iteration-count: 4;
+	    -moz-animation-timing-function: ease-in-out;
+	}
+
+	@-webkit-keyframes Floatingx{
+	    from {-webkit-transform:translate(0, 0px);}
+	    65% {-webkit-transform:translate(0, 8px);}
+	    to {-webkit-transform: translate(0, -0px);    }    
+	}
+	    
+	@-moz-keyframes Floating{
+	    from {-moz-transform:translate(0, 0px);}
+	    65% {-moz-transform:translate(0, 8px);}
+	    to {-moz-transform: translate(0, -0px);}    
 	}
 
 
@@ -203,19 +235,6 @@ body {
 		margin: 1% 0 1% 0;
 	}
 
-	#blah {
-		width: 100%;
-		opacity: 50%;
-		background-color: grey;
-		z-index: 99;
-		clear: none;
-	}
-
-	#rectangleimg {
-		width: 100%;
-		height: auto;
-	}
-
 #projects #headercontainer {
 	text-align: center;
 	margin-top: -20px;
@@ -302,4 +321,38 @@ body {
 
 	#icon:hover {
 		opacity: 1.0;
+	}
+
+/*ui dialog jquery*/
+
+#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
 	}

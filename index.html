@@ -20,6 +20,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Stylesheets -->
+	<link rel="icon" type="image/png" href="images/SnailReverse.png"/>
 	<link rel="stylesheet" href="css/html5reset.css" media="all">
 	<link rel="stylesheet" href="css/col.css" media="all">
 	<link rel="stylesheet" href="css/3cols.css" media="all">
@@ -27,6 +28,9 @@
 	<link rel="stylesheet" href="css/6cols.css" media="all">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/jquery-ui.structure.min.css" rel="stylesheet">
+	<link href="css/jquery-ui.theme.min.css" rel="stylesheet">
 
 	<!-- Responsive Stylesheets -->
 	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="css/1024.css">
@@ -56,6 +60,7 @@
 	<section class="maincontainer" id="landing" data-type="background" data-speed="2"></section>
 	<div class="maincontainer" id="logo">
 		<img src="images/SnailCircle.png" class="wow fadeIn" data-wow-duration="4s" id="mainlogo">
+		<img src="images/downarrow.png" class="animated fadeIn" id="downarrow">
 	</div>
 
 	<div class="maincontainer" id="about">
@@ -118,26 +123,28 @@
 				</div>
 			</div>
 			<div id="fourbyfour">
-				<!-- <div class="col span_4_of_6" id="blah"  onclick="imgView('che')"><img src="images/rect/cja.png" id="rectangleimg"></div> -->
+				<div class="ui-overlay" id="dialogg" title="An Image!" style="display: none;"><img id="image" src=""/></div>
 				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img src="images/square/thetatau.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"><img src="images/square/cja.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.7s"><img src="images/square/cmg.png"></div>
+					<div id="overlaycontainer">
+						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img src="images/square/thetatau.png" class="rect" id="thetatau"></div>
+						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"><img src="images/square/cja.png" class="rect" id="cja"></div>
+						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.7s"><img src="images/square/cmg.png" class="rect" id="cmg"></div>
+					</div>
 				</div>
 				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/hb.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img src="images/square/hls.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"><img src="images/square/flavor.png"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/hb.png" class="rect" id="hb"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img src="images/square/hls.png" class="rect" id="hls"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"><img src="images/square/flavor.png" class="rect" id="flavor"></div>
 				</div>
 				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.25s"><img src="images/square/shootdowncancer.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/letmeknow.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.3s"><img src="images/square/typ.png"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.25s"><img src="images/square/shootdowncancer.png" class="rect" id="shootdowncancer"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/letmeknow.png" class="rect" id="letmeknow"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.3s"><img src="images/square/typ.png" class="rect" id="typ"></div>
 				</div>
 				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img src="images/square/ctc.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img src="images/square/che.png"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/littleprince.png"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img src="images/square/ctc.png" class="rect" id="ctc"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img src="images/square/che.png" class="rect" id="che"></div>
+					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/littleprince.png" class="rect" id="littleprince"></div>
 				</div>
 			</div>
 		</div>
@@ -172,6 +179,7 @@
 </body>
 
 <script src="js/jquery-1.7.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
 <script src="js/animatescroll.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/wow.min.js"></script>
