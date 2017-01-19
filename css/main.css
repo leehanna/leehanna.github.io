@@ -243,10 +243,14 @@ p, a {
 
 /*------------- Spetcial -------------*/
 
-/*#spetcial-profiles {
+.grey-background {
 	background-color: #EBEBEB;
+}
+
+#iphone-container {
+	width: 80%;
 	padding: 50px 0 50px 0;
-}*/
+}
 
 /*------------ Theta Tau ------------*/
 
@@ -256,6 +260,17 @@ p, a {
 
 #posterboard-container { max-width: 720px; }
 #fall16-apparel-container { max-width: 700px; }
+
+
+/*--------------- HAAS ---------------*/
+
+#haas-logo {
+	height: 70px;
+}
+
+#haas-logos-container {
+	width: 80%;
+}
 
 /*.button {
 	display: flex;
