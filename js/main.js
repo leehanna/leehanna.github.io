@@ -1,4 +1,4 @@
-// $("#header").load("header.html");
+$("#nav").load("header.html");
 $("#footer").load("footer.html");
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
