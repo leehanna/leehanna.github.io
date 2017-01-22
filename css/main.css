@@ -47,6 +47,12 @@ p, a {
 .my-row [class^="my-col"] { float: left; min-height: 0.125rem; }
 .my-col-6 { width:50%; }
 
+@media only screen and (max-width: 33.75em) {  /* 540px */
+  .my-col-6 {
+    width: 100%;
+  }
+}
+
 .img-container { padding: 0 40px 0 40px; }
 .img-container > img { width: 100%; }
 
