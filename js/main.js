@@ -2,7 +2,11 @@ $("#footer").load("footer.html");
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $(".work").click(function() {
-      window.location = $(this).data("location");
+      window.location = $(".work .overlay").data("location");
+      return false;
+    });
+    $(".thumb").click(function() {
+      window.location = $(".thumb .overlay").data("location");
       return false;
     });
 } else {
