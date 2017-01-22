@@ -45,7 +45,7 @@ p, a {
 .my-row { margin: 0; padding: 0; width: 100%; position: relative; }
 .my-row::after { content: ""; display: table; clear: both; }
 .my-row [class^="my-col"] { float: left; min-height: 0.125rem; }
-.my-col-6 { width:50%; }
+.my-col-6 { width:50%; transition: width 1s ease;}
 
 @media only screen and (max-width: 33.75em) {  /* 540px */
   .my-col-6 {
@@ -136,6 +136,7 @@ p, a {
 
 	#navlogo {
 		height: 50px;
+		margin-top:5px;
 	}
 
 	nav {
