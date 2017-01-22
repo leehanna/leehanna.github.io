@@ -1,8 +1,10 @@
-$("#nav").load("header.html");
 $("#footer").load("footer.html");
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
+    $(".work").click(function() {
+      window.location = $(this).data("location");
+      return false;
+    });
 } else {
     $(".overlay").click(function() {
       window.location = $(this).data("location");
