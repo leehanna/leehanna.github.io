@@ -9,7 +9,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
       window.location = $(".thumb .overlay").data("location");
       return false;
     });
-    $(".overlay").css('display', 'none');
+    $(".work:hover .overlay").css('opacity', '0');
 } else {
     $(".overlay").click(function() {
       window.location = $(this).data("location");
