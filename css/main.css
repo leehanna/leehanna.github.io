@@ -181,7 +181,26 @@ p, a {
 		text-transform: uppercase;
 	}
 
-	#logo { max-height: 70px; margin-bottom: 15px; margin-top: 25px; }
+	#logo { 
+		max-height: 70px; 
+		margin-bottom: 15px; 
+		margin-top: 25px; 
+		animation: zoom 2s infinite;
+  		/*Set our animation play state to paused initially */
+  		animation-play-state: paused; 
+	}
+	#logo:hover { animation-play-state: running; }
+	@keyframes zoom {
+  		0% {
+	        transform: scale(1,1);
+	   	}
+	   	50% {
+	        transform: scale(1.1,1.1);
+	   	}
+	   	100% {
+	   		transform: scale(1,1);
+	   	}
+	}
 	#illust { width: 100%; padding: 50px 0 50px 0; }
 	#landing-desc { text-align: center; }
 

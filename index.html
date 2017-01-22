@@ -21,7 +21,7 @@
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="css/grid/simple-grid.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/animate_new.css">
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
 <!-- 	<script src="js/modernizr-2.5.3-min.js"></script> -->
@@ -33,7 +33,7 @@
 
 <body>
 	<!-- <section id="landing" data-type="background" data-speed="4"></section> -->
-	<div id="navigation">
+	<div id="navigation" class="wow fadeIn" data-wow-delay="2.5s" data-wow-duration="2s">
 		<a href="#"><img src="images/home/hanna_minimalistic_logo_filled.gif" id="navlogo"></a>
 		<nav>
 			<a href="#" onclick="$('body').animatescroll();">Welcome</a>
@@ -45,19 +45,19 @@
 	<div class="my-container">
 		<div class="my-row center-contents" id="landing-bg">
 			<div id="landing-container">
-				<div class="center-contents">
+				<div class="center-contents wow fadeInDown" data-wow-delay="1s" data-wow-duration="2s">
 					<div class="maintain-dim"><img src="images/home/hanna_minimalistic_logo.gif" id="logo"></div>
 					<a id="name">Hanna Lee</a>
 				</div>
-				<img src="images/home/me_illustration.png" id="illust">
-				<div id="landing-desc">
+				<img src="images/home/me_illustration.png" id="illust" class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="4s">
+				<div id="landing-desc" class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="2s">
 					<a id="name-desc">Developer</a><br/>
 					<a id="name-desc">UX Designer</a><br/>
 					<a id="name-desc">Art Enthusiast</a>
 				</div>
 			</div>
 		</div>
-		<div class="my-row center-contents work" id="swdb">
+		<div class="my-row center-contents work wow fadeIn" id="swdb" data-wow-offset="30">
 			<img id="swdb-imac" src="images/swdb/swdb_imac.png">
 			<div data-location="swdb.html" class="overlay center-contents">
 				<img src="images/home/search.png">
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 		<div class="my-row" id="others-container">
-			<div class="my-col-6 center-contents work" id="spetcial">
+			<div class="my-col-6 center-contents work wow fadeIn" id="spetcial" data-wow-duration="2s" data-wow-offset="30" data-wow-delay="0.25s">
 				<div class="center-contents">
 					<img id="spetcial-logo" src="images/spetcial/spetcial_logo.png">
 					<img id="spetcial-iphone" src="images/spetcial/spetcial_profile_final.png">
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 			<div class="my-col-6">
-				<div class="my-row center-contents work" id="theta-tau">
+				<div class="my-row center-contents work wow fadeIn" id="theta-tau" data-wow-duration="2s" data-wow-offset="30" data-wow-delay="0.25s">
 					<div class="img-container">
 						<img class="shadow" src="images/theta_tau/spring16_rush_lego_flyer-01.jpg">
 						<div data-location="thetatau.html" class="overlay center-contents">
@@ -94,7 +94,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="my-row center-contents work" id="haas">
+				<div class="my-row center-contents work wow fadeIn" id="haas" data-wow-duration="2s" data-wow-offset="30" data-wow-delay="0.25s">
 					<div class="img-container">
 						<img src="images/haas/haas_leadership_society_logo.png">
 						<div data-location="haas.html" class="overlay center-contents">
@@ -119,5 +119,8 @@
 <script src="js/navigation.js"></script>
 <script src="js/animatescroll.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 
 </html>
