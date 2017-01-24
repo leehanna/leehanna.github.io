@@ -23,6 +23,11 @@ p, a {
 	flex-direction: column;
 }
 
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
 .my-container { width: 100%; }
 .my-row { margin: 0; padding: 0; width: 100%; position: relative; }
 .my-row::after { content: ""; display: table; clear: both; }
