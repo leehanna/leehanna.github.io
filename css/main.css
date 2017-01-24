@@ -42,6 +42,8 @@ p, a {
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
   .work:hover .overlay { visibility: visible; opacity: 1; }
+}
+
   .overlay {
 	opacity: 0;
 	transition: opacity 0.2s linear;
@@ -67,7 +69,6 @@ p, a {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 	}
-}
 
 .section-header {
 	font-family: 'Nunito', sans-serif;
@@ -141,8 +142,8 @@ p, a {
 
 	@media only screen and (max-width: 33.75em) {  /* 540px */
 	  nav a {
-	  	font-size: 0.5em;
-	  	padding-right: 15px;
+	  	font-size: 0.75em;
+	  	padding-left: 15px;
 	  }
 	}
 
