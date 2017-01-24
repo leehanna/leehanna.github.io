@@ -142,9 +142,13 @@ p, a {
 
 	@media only screen and (max-width: 33.75em) {  /* 540px */
 
+		nav {
+			padding-right:30px;
+		}
+
 	  	nav a {
 	  	font-size: 0.7em;
-	  	padding-left: 3px;
+	  	padding: 0 10px 0 10px;
 	  	}
 	}
 
