@@ -23,11 +23,6 @@ p, a {
 	flex-direction: column;
 }
 
-span.reverse {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
-
 .my-container { width: 100%; }
 .my-row { margin: 0; padding: 0; width: 100%; position: relative; }
 .my-row::after { content: ""; display: table; clear: both; }
@@ -189,7 +184,6 @@ span.reverse {
 		margin-bottom: 15px; 
 		margin-top: 25px; 
 		animation: zoom 2s infinite;
-  		/*Set our animation play state to paused initially */
   		animation-play-state: paused; 
 	}
 	#logo:hover { animation-play-state: running; }
@@ -204,7 +198,7 @@ span.reverse {
 	   		transform: scale(1,1);
 	   	}
 	}
-	#illust { width: 100%; padding: 50px 0 50px 0; }
+	#illust { width: 100%; padding: 50px 0 35px 0; }
 	#landing-desc { text-align: center; }
 
 		#landing-desc > a {
