@@ -188,15 +188,9 @@ p, a {
 	}
 	#logo:hover { animation-play-state: running; }
 	@keyframes zoom {
-  		0% {
-	        transform: scale(1,1);
-	   	}
-	   	50% {
-	        transform: scale(1.1,1.1);
-	   	}
-	   	100% {
-	   		transform: scale(1,1);
-	   	}
+  		0% { transform: scale(1,1); }
+	   	50% { transform: scale(1.1,1.1); }
+	   	100% { transform: scale(1,1); }
 	}
 	#illust { width: 100%; padding: 50px 0 35px 0; }
 	#landing-desc { text-align: center; }
@@ -207,6 +201,34 @@ p, a {
 			letter-spacing: 1.5px;
 			font-weight: 300;
 		}
+
+	#downarrow {
+		width: 40px;
+		padding-top: 20px;
+		display: inline-block;
+		-webkit-animation-delay: 2s;
+		-webkit-animation-name: Floatingx;
+	    -webkit-animation-duration: 1.5s;
+	    -webkit-animation-iteration-count: 4;
+	    -webkit-animation-timing-function: ease-in-out;
+	    -moz-animation-delay: 2s;
+	    -moz-animation-name: Floating;
+	    -moz-animation-duration: 1.5s;
+	    -moz-animation-iteration-count: 4;
+	    -moz-animation-timing-function: ease-in-out;
+	}
+
+	@-webkit-keyframes Floatingx{
+	    from {-webkit-transform:translate(0, 0px);}
+	    65% {-webkit-transform:translate(0, 8px);}
+	    to {-webkit-transform: translate(0, -0px);    }    
+	}
+	    
+	@-moz-keyframes Floating{
+	    from {-moz-transform:translate(0, 0px);}
+	    65% {-moz-transform:translate(0, 8px);}
+	    to {-moz-transform: translate(0, -0px);}    
+	}
 
 #swdb { background-color: #AEC2D1; height: 550px; }
 #swdb-imac { max-width: 350px; }
@@ -238,22 +260,13 @@ p, a {
 	height:30px;
 	display: inline-block;
 }
-
-	#credits > a {
-		color: rgba(110,110,110,0.5);
-		font-weight: 300;
-		font-size: 16px;
-	}
+#credits > a { color: rgba(110,110,110,0.5); font-weight: 300; font-size: 16px; }
 
 /*--------------- work ---------------*/
 
-.works-desc-page {
-	padding-top: 60px;
-}
+.works-desc-page { padding-top: 60px; }
 
-.section-container {
-	margin: 60px 0 60px 0;
-}
+.section-container { margin: 60px 0 60px 0; }
 
 .thumb {
 	width: 100%;
@@ -276,86 +289,28 @@ p, a {
 
 /*--------------- SWDB ---------------*/
 
-#swdb-logo {
-	height: 100px;
-}
+#swdb-logo { height: 100px; }
+#imac-container { background-color: #AEC2D1; min-height: 500px; }
+#imac-container > img { height: 300px; }
 
-#imac-container {
-	background-color: #AEC2D1;
-	min-height: 500px;
-}
-
-	#imac-container > img {
-		height: 300px;
-	}
-
-#screens {
-	background-color: #EBEBEB;
-}
-
-	#screens img {
-		width: 100%;
-	}
-
-	#screens-container {
-		padding: 50px;
-		max-width: 700px;
-	}
-
-	#screen-2 {
-		margin-top: 50px;
-	}
+#screens { background-color: #EBEBEB; }
+#screens img { width: 100%; }
+#screens-container { padding: 50px; max-width: 700px;}
+#screen-2 { margin-top: 50px; }
 
 /*------------- Spetcial -------------*/
 
-.grey-background {
-	background-color: #EBEBEB;
-}
-
-#iphone-container {
-	width: 80%;
-	padding: 50px 0 50px 0;
-}
+.grey-background { background-color: #EBEBEB; }
+#iphone-container { width: 80%; padding: 50px 0 50px 0;}
 
 /*------------ Theta Tau ------------*/
 
-#flyer {
-	margin-bottom: 60px;
-}
-
+#flyer { margin-bottom: 60px;}
 #posterboard-container { max-width: 720px; }
 #fall16-apparel-container { max-width: 700px; }
 
 
 /*--------------- HAAS ---------------*/
 
-#haas-logo {
-	height: 70px;
-}
-
-#haas-logos-container {
-	width: 80%;
-}
-
-/*.button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid rgb(170,170,170);
-	width: 200px;
-}
-
-	.button-text {
-		text-transform: uppercase;
-		font-weight: 300;
-		padding:15px;
-		text-decoration: none;
-	}
-
-	.button:hover {
-		background-color: rgb(170,170,170);
-	}
-
-	.button:hover .button-text {
-		color: white;
-	}*/
+#haas-logo { height: 70px; }
+#haas-logos-container { width: 80%; }
