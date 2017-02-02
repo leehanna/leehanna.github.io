@@ -3,7 +3,7 @@ $("#footer").load("footer.html");
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $(".work").click(function() {
       $(this).children('img').eq(0);
-      window.location = $(this).children('.work .overlay').eq(0).data("location");
+      window.location = $(this).children('div.overlay').eq(0).data("location");
       // window.location = $(".work .overlay").data("location");
       return false;
     });
