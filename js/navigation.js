@@ -3,7 +3,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 } else {
     var scroll_start = 0;
-    var startchange = $('#spetcial');
+    var startchange = $('#home-container');
     var offset = startchange.offset();
     $('#navigation').css('background-color', 'transparent');
     $('#navigation').css('border-bottom', 'none');
