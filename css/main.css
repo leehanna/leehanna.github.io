@@ -38,8 +38,8 @@ p, a {
 .img-container { padding: 0 40px 0 40px; }
 .img-container > img { width: 100%; }
 
-.work { position: relative; }
-
+.work { position: relative; overflow: hidden; height: 370px; background-color: #f4f4f4; }
+.work-container.row { margin-top: 20px; margin-bottom: 20px; }
 @media only screen and (min-width: 33.75em) {  /* 540px */
   .work:hover .overlay { visibility: visible; opacity: 1; }
 }
@@ -238,21 +238,21 @@ p, a {
 	    to {-moz-transform: translate(0, -0px);}    
 	}
 
-#swdb { background-color: #AEC2D1; height: 550px; }
+#home-container {
+	padding-top: 100px;
+}
+
 #swdb-imac { max-width: 350px; }
 
-#others-container { height: 750px; }
+#others-container { height: 370px; position: relative; }
 #others-container > div { height: 100%; }
 
-#spetcial { background-color: #EBEBEB; height: 100%; }
 #spetcial > div { max-width: 330px; }
-#spetcial-logo { width: 30%; margin-bottom: 20px; }
+#spetcial-logo { width: 30%; margin-top: 30px; }
 #spetcial-iphone { width: 100%; }
 
-#theta-tau { background-color: #A3D3AC; height: 50%; }
 #theta-tau > .img-container { max-width: 250px; }
 
-#haas { background-color: #FBDC84; height: 50%; }
 #haas > .img-container { max-width: 200px; }
 
 /*-------------- footer --------------*/
