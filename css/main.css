@@ -168,7 +168,13 @@ p, a {
 
 	@media only screen and (max-width: 33.75em) {  /* 540px */
 		#landing-bg {
+			width: 100%;
+			height: 100%;
 			background: url(../images/home/background_bw1.jpg) center 0 no-repeat fixed;
+			-webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
 			background-attachment: scroll;
 		}
 	}
