@@ -282,7 +282,14 @@ p, a {
 	height:30px;
 	display: inline-block;
 }
-#credits > a { color: rgba(110,110,110,0.5); font-weight: 300; font-size: 16px; }
+#credits > a { 
+	font-family: 'Lato', sans-serif;
+	color: rgba(110,110,110,0.5); 
+	font-weight: 300; 
+	font-size: 13px; 
+	letter-spacing: 0.7px;
+	text-transform: uppercase; 
+}
 
 /*--------------- work ---------------*/
 
