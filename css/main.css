@@ -158,7 +158,7 @@ p, a {
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		background: url(../images/home/background_bw.jpg) 50% 0 repeat fixed;
+		background: url(../images/home/background_bw.jpg) center 0 no-repeat fixed;
 	    -webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -199,6 +199,12 @@ p, a {
 		bottom: 0;
 		margin: 0 auto;
 		width: 165px;
+	}
+
+	@media only screen and (max-width: 33.75em) {  /* 540px */
+		#landing-desc {
+			padding-bottom: 50px;
+		}
 	}
 
 		#landing-desc > a {
