@@ -146,19 +146,13 @@ p, a {
 		color: #c8c8c8;
 	}
 
-#landing-bg {
+#landing {
 	width: 100%;
 	min-height: 100vh;
 	overflow-y: hidden;
 }
 
-	@media only screen and (max-width: 33.75em) {  /* 540px */
-		#landing {
-			background-attachment: scroll;
-		}
-	}
-
-	#landing {
+	#landing-bg {
 		top: 0;
 		margin: 0;
 		width: 100%;
@@ -169,6 +163,13 @@ p, a {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+	}
+
+
+	@media only screen and (max-width: 33.75em) {  /* 540px */
+		#landing-bg {
+			background-attachment: scroll;
+		}
 	}
 	
 	#landing-container {
