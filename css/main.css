@@ -153,7 +153,7 @@ p, a {
 }
 
 	@media only screen and (max-width: 33.75em) {  /* 540px */
-		#landing-bg {
+		#landing {
 			background-attachment: scroll;
 		}
 	}
