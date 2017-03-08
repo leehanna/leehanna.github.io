@@ -35,7 +35,7 @@
 
 <body>
 	<div id="navigation">
-		<a href="index.html"><img src="images/home/hanna_minimalistic_logo_filled.gif" id="navlogo"></a>
+		<a href="index.html"><img src="images/home/my_logo_darkgrey.png" id="navlogo"></a>
 		<nav>
 			<a href="index.html">Welcome</a>
 			<a href="index.html#swdb">Projects</a>
@@ -45,15 +45,12 @@
 	</div>
 	<div class="container works-desc-page">
 		<div class="row section-container">
-			<div class="col-8">
+			<div class="col-10">
 				<img id="swdb-logo" src="images/swdb/swdb_logo.jpg">
-				<p class="subheader-desc">A website that provides a database of all redistricting data for California.</p>
-			</div>
-			<div class="col-4" id="role">
-				<a class="section-header">My Role</a>
-				<div class="header-divider"></div>
-				<p class="subheader-desc">Redefine the user experience for data searchability<br/>
-				Implement the new UI/UX using HTML/CSS/JS/PHP</p>
+				<p class="subheader-desc">A website that provides a database of all redistricting data for California.<br/>
+				Visit the original website at <a href="http://statewidedatabase.org" target="_blank">statewidedatabase.org</a><br/>
+				Unfortunately, my work is currently deployed on a private staging website.
+				</p>
 			</div>
 		</div>
 		<div class="row section-container">
@@ -65,29 +62,55 @@
 		</div>
 		<div class="row section-container">
 			<div class="col-12">
-				<a class="section-header">The Challenge</a>
+				<a class="section-header">My Role</a>
 				<div class="header-divider"></div>
-				<p class="subheader-desc">Due to the vast and varying categories of redistricting data, the organization of the site is key to helping people find the data they need. As the sole developer for Statewide Database, I had a great degree of freedom to implement my creative vision. Correspondingly, I designed a custom homepage, navigation bar, and footer to differentiate the site from others. From there, I utilized JavaScript and PHP ton obtain the needed functionality.</p>
+				<p class="subheader-desc">March 2015 - Feb 2016<br/>As the sole web developer for Statewide Database (SWDB), I worked on the UI/UX Design, frontend, and backend using HTML, CSS, JS, PHP, and Bootstrap. My main goal was to improve the navigability of the website and modernize the UI.</p>
 			</div>
 		</div>
 		<div class="row section-container">
 			<div class="col-12">
-				<a class="section-header">The Process - Navigation</a>
+				<a class="section-header">Navigation UX</a>
 				<div class="header-divider"></div>
-				<p class="subheader-desc">My main focus for navigation was on those users who did not know the specific files they were looking for. I utilized the header navigation bar as well as the footer to provide two avenues for navigating the site. Within the nested mega navigation bar, I organized the data by years, and then further subcategorized it by type of data. The footer I designed took a different approach, instead displaying the most popular categories subdivided by years of data available.</p>
-			</div>
-		</div>
-		<div class="row section-container">
-			<div class="col-12 center-contents" id="screens">
-				<div id="screens-container">
-					<img class="shadow" id="screen-1" src="images/swdb/swdb_screen1_high.jpg">
-					<img class="shadow" id="screen-2" src="images/swdb/swdb_screen2_high.jpg">
+				<p class="subheader">Problem</p>
+				<p class="subheader-desc">How do you help people find the information they need?</p>
+				<p class="subheader">Research</p>
+				<ul class="subheader-desc">
+					<li>First, I poured over books around the office to gain a basic understanding of redistricting data.</li>
+					<li>The current organization of the website is very disorganized and unintuitive. The user has to click through several different links to get to a page with all the files, which are placed in tables.</li>
+					<li>Then, I visited redistricting websites to see how they were organized. Although none of the websites really offered a simple way to search through the categories, I was able to gain a better idea of what works and what doesn’t.</li>
+				</ul>
+				<p class="subheader">Hypothesis</p>
+				<ul class="subheader-desc">
+					<li>Offer two different ways of categorization</li>
+					<li>A versatile navigation bar that is well-organized and intuitive</li>
+					<li>Navigation should also be possible within the actual data page</li>
+				</ul>
+				<p class="subheader">Header Navigation Bar</p>
+				<ul class="subheader-desc">
+					<li>I organized the different categories into a mega navigation bar similar to Amazon’s that has multiple nested drop downs. To nest them in an organized fashion, I made a side panel that displays more options on mouse hover.</li>
+					<li>Similar to Amazon’s mega navigation bar, I opted to display additional panels on mouse hover instead of on click to make using the navigation bar more fluid and less of a commitment.</li>
+					<li>The main navigation bar has the main categories of redistricting data, election data, and additional resources. The next level of organization was by years, and I showed all of the related data of that year in one place.</li>
+				</ul>
+				<div class="row">
+					<div class="col-12">
+						<img class="full-width shadow" src="images/swdb/swdb_screen1_high.jpg">
+					</div>
+				</div>
+				<p class="subheader">Mega Footer</p>
+				<ul class="subheader-desc">
+					<li>Additionally, I offered a different organization structure in the footer, where I grouped all the data by type and showed all the different years of that data.</li>
+					<li>The office frequently receives inquiries regarding location certain files, so I placed a contact form right in the footer so that it is accessible on every page.</li>
+				</ul>
+				<div class="row">
+					<div class="col-12">
+						<img class="full-width shadow" src="images/swdb/swdb_screen2.png">
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row section-container">
 			<div class="col-12">
-				<a class="section-header">The Process - Search</a>
+				<a class="section-header">Search</a>
 				<div class="header-divider"></div>
 				<p class="subheader-desc">For users who DO know exactly what file they are looking for, I developed a categorical search engine connected to a MySQL database. I populated the database by crawling through the archives and parsing the file names to categorize them.</p>
 			</div>
