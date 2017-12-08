@@ -5,9 +5,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
-
 <head>
-	<title>Hanna Lee</title>
+	<title>HANNA LEE | Portfolio and Resume</title>
 	<meta charset="utf-8">
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,170 +18,119 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Stylesheets -->
-	<link rel="icon" type="image/png" href="images/SnailReverse.png"/>
-	<link rel="stylesheet" href="css/html5reset.css" media="all">
-	<link rel="stylesheet" href="css/col.css" media="all">
-	<link rel="stylesheet" href="css/3cols.css" media="all">
-	<link rel="stylesheet" href="css/4cols.css" media="all">
-	<link rel="stylesheet" href="css/6cols.css" media="all">
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link href="css/jquery-ui.min.css" rel="stylesheet">
-	<link href="css/jquery-ui.structure.min.css" rel="stylesheet">
-	<link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+	<meta property="og:image" content="images/home/thumb.jpg">
 
-	<!-- Responsive Stylesheets -->
-	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="css/1024.css">
-	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="css/768.css">
-	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/480.css">
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/grid/simple-grid.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate_new.css">
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
 	<script src="js/modernizr-2.5.3-min.js"></script>
+	<script type="text/javascript" src="js/spamspan.js"></script>
 
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400" rel="stylesheet">
 
 </head>
 
 <body>
-	<div class="animated fadeInDown" id="navigation">
-		<div id="navigationcontent">
-			<a href="#"><img src="images/Snail1.png" id="navlogo"></a>
-			<nav>
-				<a href="#" onclick="$('body').animatescroll();">HOME</a>
-				<a href="#" onclick="$('#about').animatescroll();">ABOUT</a>
-				<a href="#" onclick="$('#aboutdesigndiv').animatescroll();">DESIGN</a>
-				<a href="resume.pdf">RESUME</a>
-				<!-- <a href="#" onclick="$('#designprojectsdiv').animatescroll({padding:50});">PROJECTS</a> -->
-			</nav>
-		</div>
+	<div id="navigation" class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s">
+		<a href="#"><img src="images/home/my_logo_darkgrey.png" id="navlogo"></a>
+		<nav>
+			<a href="#" onclick="$('body').animatescroll();">Welcome</a>
+			<a href="#" onclick="$('#home-container').animatescroll();">Projects</a>
+			<a href="#" onclick="$('#contact').animatescroll();">Contact</a>
+			<a href="resume.pdf">Resume</a>
+		</nav>
 	</div>
-	<section class="maincontainer" id="landing" data-type="background" data-speed="2"></section>
-	<div class="maincontainer" id="logo">
-		<img src="images/SnailCircle.png" class="wow fadeIn" data-wow-duration="4s" id="mainlogo">
-		<img src="images/downarrow.png" class="animated fadeIn" id="downarrow">
-	</div>
-
-	<div class="maincontainer" id="about">
-		<div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="30" id="headercontainer">
-			<a id="header">ABOUT</a>
-		</div>
-		<div class="section group" id="colcontainer">
-			<div class="col span_1_of_3 wow fadeInUp" data-wow-duration="1s" data-wow-offset="30" id="aboutcol">
-				<div>
-					<img src="images/education.png" id="circle">
-				</div>
-				<div class="body" id="aboutbody">
-					<a>University of California, Berkeley
-					</br>B.A. Computer Science, 2017<br/>
-					<br/><strong>Courses</strong>
-					<br/>Efficient Algorithms and Intractable Problems
-					<br/>User Interface Design
-					<br/>Data Structures and Algorithms
-					<br/>Machine Structures
-					<br/>Discrete Mathematics and Probability Theory
-					</a>
-				</div>
+	<!-- <section id="landing" data-type="background" data-speed="4"></section> -->
+	<div class="my-row center-contents center" id="landing">
+		<section id="landing-bg" data-type="background" data-speed="6"></section>
+		<div id="landing-container" class="center-contents">
+			<div class="center-contents wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s">
+				<div class="maintain-dim"><img src="images/home/my_logo_lightgrey.png" id="logo"></div>
+				<a id="name">Hanna Lee</a>
 			</div>
-			<div class="col span_1_of_3 wow fadeInUp" data-wow-duration="1s" data-wow-offset="30" data-wow-delay="0.35s" id="aboutcol">
-				<div>
-					<img src="images/activities.png" id="circle">
-				</div>
-				<div class="body" id="aboutbody">
-					<a><strong>Innovative Design</strong>
-					<br/>Website, logo, and flyer design for school clubs<br/><br/>
-					<strong>Berkeley Innovation</strong>
-					<br/>User interface / user experience club<br/><br/>
-					<strong>Theta Tau</strong>
-					<br/>Professional Engineering Fraternity</br><br/></a>
-				</div>
-			</div>
-			<div class="col span_1_of_3 wow fadeInUp" data-wow-duration="1s" data-wow-offset="30" data-wow-delay="0.25s" id="aboutcol">
-				<div>
-					<img src="images/interests.png" id="circle">
-				</div>
-				<div class="body" id="aboutbody">
-					<a>Mobile App Development
-					<br/>User Interface / User Experience
-					<br/>Human Behavior
-					<br/>Learning New Things
-					<br>Cardio Kickboxing / Hiking / Pilates</a>
-				</div>
+			<div id="landing-desc" class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+				<a id="name-desc">Developer</a><br/>
+				<a id="name-desc">UI/UX Designer</a><br/>
+				<a href="#" onclick="$('#home-container').animatescroll();"><img src="images/home/downarrow.png" id="downarrow"></a>
 			</div>
 		</div>
 	</div>
-
-	<div id="dividercontainer"><div class="divider" id="aboutdesigndiv"></div></div>
-
-	<div class="maincontainer" id="design">
-		<div class="section group" id="colcontainer">
-			<div class="col span_2_of_6" id="designtxtcontainer">
-				<div id="designtxt">
-					<div class="wow fadeInUp" data-wow-duration="1.5s" id="designheadercontainer"><a id="header">DESIGN</a></div>
-					<div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s" id="desccontainer"><a id="desc"><br/><br/>Here are various design projects I did for school clubs, a student job, an internship, and a non-profit.<br/><br/>I fell in love with design in high school and have been avidly exploring this area ever since. So far, I have gotten my hands dirty designing magazine layouts, flyers, logos, website mockups, and apparel. In the future, I hope to learn more about user interface and user experience design.</a></div>
-				</div>
+	<div class="container" id="home-container">
+		<div class="row">
+			<div class="col-12">
+				<a class="section-header">Recent Work</a>
+				<div class="header-divider"></div>
 			</div>
-			<div id="fourbyfour">
-				<div class="ui-overlay" id="dialogg" title="An Image!" style="display: none;"><img id="image" src=""/></div>
-				<div class="col span_1_of_6">
-					<div id="overlaycontainer">
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img src="images/square/thetatau.png" class="rect" id="thetatau"></div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"><img src="images/square/cja.png" class="rect" id="cja"></div>
-						<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.7s"><img src="images/square/cmg.png" class="rect" id="cmg"></div>
+		</div>
+		<div class="row work-container">
+			<div class="col-12 center-contents work wow fadeIn" id="spetcial" data-wow-offset="30" data-location="spetcial.html">
+				<div class="center-contents">
+					<img id="spetcial-logo" src="images/spetcial/spetcial_logo.png">
+					<img id="spetcial-iphone" src="images/spetcial/spetcial_profile_final.png">
+					<div data-location="spetcial.html" class="overlay center-contents">
+						<img src="images/home/search.png">
+						<div class="overlay-desc">
+							<p>Spetcial</p>
+							<a>An early stage startup looking to transform the pet industry by providing an all-inclusive app for pet owners.</a>
+						</div>
 					</div>
 				</div>
-				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/hb.png" class="rect" id="hb"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img src="images/square/hls.png" class="rect" id="hls"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"><img src="images/square/flavor.png" class="rect" id="flavor"></div>
-				</div>
-				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.25s"><img src="images/square/shootdowncancer.png" class="rect" id="shootdowncancer"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/letmeknow.png" class="rect" id="letmeknow"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.3s"><img src="images/square/typ.png" class="rect" id="typ"></div>
-				</div>
-				<div class="col span_1_of_6">
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img src="images/square/ctc.png" class="rect" id="ctc"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img src="images/square/che.png" class="rect" id="che"></div>
-					<div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s"><img src="images/square/littleprince.png" class="rect" id="littleprince"></div>
+			</div>
+		</div>
+		<div class="row work-container">
+			<div class="col-12 center-contents work wow fadeIn" id="swdb" data-wow-offset="30" data-location="swdb.html">
+				<div class="img-container">
+					<img id="swdb-imac" src="images/swdb/swdb_imac.png">
+					<div data-location="swdb.html" class="overlay center-contents">
+						<img src="images/home/search.png">
+						<div class="overlay-desc">
+							<p>Statewide Database</p>
+							<a>Website and branding redesign for the California redistricting database.</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<!-- <div id="dividercontainer"><div class="divider" id="designprojectsdiv"></div></div> -->
-
-<!-- 	<div class="maincontainer" id="projects" data-wow-offset="30">
-		<div id="headercontainer" class="wow bounceInUp data-wow-duration="2s"">
-			<a id="header">PROJECTS</a>
-		</div>
-		<div class="section group" id="colcontainer">
-			<div class="col span_1_of_3">
-				<img src="images/solveitusa.png" id="projecticon">
+		<div class="row work-container" id="others-container">
+			<div class="col-6 center-contents work wow fadeIn" id="theta-tau" data-wow-duration="2s" data-wow-offset="30" data-wow-delay="0.25s" data-location="thetatau.html"">
+				<div class="img-container">
+					<img class="shadow" src="images/theta_tau/spring16_rush_lego_flyer-01.jpg">
+					<div data-location="thetatau.html" class="overlay center-contents">
+						<img src="images/home/search.png">
+						<div class="overlay-desc">
+							<p>Theta Tau</p>
+							<a>A collection of apparel and flyers for Theta Tau, a professional engineering fraternity.</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col span_2_of_3">
-				<div class="body">
-					<a>Here are various design projects I did for school clubs, a student job, an internship, and a non-profit.<br/><br/>I fell in love with design in high school and have been avidly exploring this area ever since. So far, I have gotten my hands dirty designing magazine layouts, flyers, logos, website mockups, and apparel. In the future, I hope to learn more about user interface and user experience design.</a>
+			<div class="col-6 center-contents work wow fadeIn" id="haas" data-wow-duration="2s" data-wow-offset="30" data-wow-delay="0.25s" data-location="haas.html"">
+				<div class="img-container">
+					<img src="images/haas/haas_leadership_society_logo.png">
+					<div data-location="haas.html" class="overlay center-contents">
+						<img src="images/home/search.png">
+						<div class="overlay-desc">
+							<p>Haas</p>
+							<a>Various design work including logos and posterboards for UC Berkeley’s Haas Alumni Relations.</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div> -->
-
-	<div id="footercontainer">
-		<div id="name" class="wow fadeIn" data-wow-duration="3s"><a>HANNALLEE@BERKELEY.EDU</a></div>
-		<div id="iconcontainer">
-			<a href="https://linkedin.com/in/hannalee95/"><div class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s"><img src="images/icons/linkedin.png" id="icon"></div></a>
-			<a href="https://github.com/leehanna"><div class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.75s"><img src="images/icons/github.png" id="icon"></div></a>
-			<a href="http://instagram.com/leehannaa"><div class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s"><img src="images/icons/insta.png" id="icon"></div></a>
-		</div>
+		<div id="footer"></div>
 	</div>
 </body>
 
 <script src="js/jquery-1.7.2.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
-<script src="js/animatescroll.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animatescroll.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
 	new WOW().init();
