@@ -1,166 +1,101 @@
-<!DOCTYPE html>
-<!-- HTML5 Boilerplate -->
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html>
-<head>
-	<title>Hanna Lee - Developer and Designer</title>
-	<meta charset="utf-8">
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+---
+title: Hanna Lee - Developer and Designer
+layout: base
+---
 
-	<meta http-equiv="cleartype" content="on">
-
-	<!-- Responsive and mobile friendly stuff -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- <meta property="og:image" content="images/home/thumb.jpg"> -->
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-	<!-- stylesheets -->
-	<link rel="stylesheet" href="assets/main.css">
-	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-	<!-- <link rel="stylesheet" href="css/animate_new.css"> -->
-
-	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
-	<script src="assets/js/modernizr-2.5.3-min.js"></script>
-	<!-- <script type="text/javascript" src="js/spamspan.js"></script> -->
-
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
-
-</head>
-
-<body>
-	<div id="navigation">
-		<a href="index.html"><img src="assets/images/hannabanana_small.svg" id="thumblogo"></a>
-		<nav>
-			<a class="header-fontstyle" href="index.html">Portfolio</a>
-			<a class="header-fontstyle" href="#">Profile</a>
-			<a class="header-fontstyle" href="#">Ping Me</a>
-		</nav>
-	</div>
-	<main class="container">
-		<div id="home-header">
-			<img id="mainlogo" src="assets/images/hannabanana_full_logo.svg">
-			<p class="header-fontstyle">Hi there, I am a UI/UX Designer who studied computer science at UC Berkeley.</p>
-			<p class="header-fontstyle"><b>Welcome to my design portfolio.</b></p>
-			<div class="divider"></div>
-		</div>
-		<div id="works">
-			<div class="grid-6 s-grid-12 pad-1-right">
-				<a href="goodmarket/">
-					<div id="goodmarket" class="marg-2-vert workbox square">
-						<img class="absolute-center" src="assets/images/goodmarket_demo.gif">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Good Market</p>
-								<p class="overlay-subtitle">Mobile Grocery</p>
-								<p class="overlay-category">UI/UX, Branding</p>
-							</div>
-						</div>
+<div id="home-header">
+	<img id="mainlogo" src="assets/images/hannabanana_full_logo.svg">
+	<p class="header-fontstyle">Hi there, I am a UI/UX Designer who studied computer science at UC Berkeley.</p>
+	<p class="header-fontstyle"><b>Welcome to my design portfolio.</b></p>
+	<div class="divider"></div>
+</div>
+<div id="works">
+	<div class="grid-6 s-grid-12 pad-1-right s-pad-0-left">
+		<a href={{ "portfolio/goodmarket" | relative_url }}>
+			<div id="goodmarket" class="marg-2-vert workbox square">
+				<!--<img class="absolute-center" src="assets/images/goodmarket_demo.gif">-->
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Good Market</p>
+						<p class="overlay-subtitle">Mobile Grocery</p>
+						<p class="overlay-category">UI/UX, Branding</p>
 					</div>
-				</a>
-				<a href="/spetcial">
-					<div id="spetcial" class="marg-2-vert workbox square">
-						<img class="horiz-center" src="assets/images/spetcial.jpg">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Spetcial</p>
-								<p class="overlay-subtitle">App for Pet Owners</p>
-								<p class="overlay-category">UI/UX, Branding</p>
-							</div>
-						</div>
-					</div>
-				</a>
-				<a href="/swdb">
-					<div id="swdb" class="marg-2-vert workbox rectangle">
-						<img class="absolute-center" src="assets/images/swdb.png">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Statewide Database</p>
-								<p class="overlay-subtitle">CA Redistricting Database</p>
-								<p class="overlay-category">Web UI/UX, Branding</p>
-							</div>
-						</div>
-					</div>
-				</a>
+				</div>
 			</div>
-			<div class="grid-6 s-grid-12 pad-1-left">
-				<a href="/adestefideles">
-					<div id="adeste-fideles" class="marg-2-vert workbox rectangle">
-						<img class="horiz-center" src="assets/images/adeste_fideles.png">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Adeste Fideles</p>
-								<p class="overlay-subtitle">Young Adult Ministry</p>
-								<p class="overlay-category">Branding, Apparel</p>
-							</div>
-						</div>
+		</a>
+		<a href="/spetcial">
+			<div id="spetcial" class="marg-2-vert workbox square">
+				<!--<img class="horiz-center" src="assets/images/spetcial.jpg">-->
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Spetcial</p>
+						<p class="overlay-subtitle">App for Pet Owners</p>
+						<p class="overlay-category">UI/UX, Branding</p>
 					</div>
-				</a>
-				<a href="/healthandlove">
-					<div id="healthandlove" class="marg-2-vert workbox square-adjusted">
-						<img class="absolute-center" src="assets/images/healthandlove.png">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Health &amp; Love</p>
-								<p class="overlay-subtitle">Sexual Health for Cambodians</p>
-								<p class="overlay-category">UI/UX, Branding, Character Design</p>
-							</div>
-						</div>
-					</div>
-				</a>
-				<a href="/nyonyum">
-					<div id="friends-nyonyum" class="marg-2-vert workbox rectangle">
-						<img src="assets/images/nyonyum.png">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Friends International</p>
-								<p class="overlay-subtitle">Social Enterprise</p>
-								<p class="overlay-category">Marketing</p>
-							</div>
-						</div>
-					</div>
-				</a>
-				<a href="/thetatau">
-					<div id="thetatau-lego" class="marg-2-vert workbox rectangle">
-						<img class="absolute-center" src="assets/images/lego_rush_flyer.png">
-						<div class="overlay">
-							<div class="overlay-text-container absolute-center">
-								<p class="overlay-title header-fontstyle">Theta Tau</p>
-								<p class="overlay-subtitle">Engineering Club</p>
-								<p class="overlay-category">Marketing</p>
-							</div>
-						</div>
-					</div>
-				</a>
+				</div>
 			</div>
-		</div>
-	</main>
-	<div id="footer">
-		<div class="btn">
-			<p class="header-fontstyle"><span class="lnr lnr-envelope"></span>Ping Me</p>
-		</div>
-		<div id="social-media">
-			<div id="linkedin" class="social-media-icon"></div>
-			<div id="behance" class="social-media-icon"></div>
-			<div id="github" class="social-media-icon"></div>
-		</div>
-		<p id="copyright">2017 © Hanna Lee - All rights reserved</p>
+		</a>
+		<a href="/swdb">
+			<div id="swdb" class="marg-2-vert workbox rectangle">
+				<!--<img class="absolute-center" src="assets/images/swdb.png">-->
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Statewide Database</p>
+						<p class="overlay-subtitle">CA Redistricting Database</p>
+						<p class="overlay-category">Web UI/UX, Branding</p>
+					</div>
+				</div>
+			</div>
+		</a>
 	</div>
-</body>
-
-<script src="assets/js/jquery-1.7.2.min.js"></script>
-<script src="assets/js/main.js"></script>
-<!-- <script src="js/navigation.js"></script> -->
-<!-- <script src="js/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
- -->
-</html>
+	<div class="grid-6 s-grid-12 pad-1-left s-pad-0-left">
+		<a href="/adestefideles">
+			<div id="adeste-fideles" class="marg-2-vert workbox rectangle">
+				<!--<img class="horiz-center" src="assets/images/adeste_fideles.png">-->
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Adeste Fideles</p>
+						<p class="overlay-subtitle">Young Adult Ministry</p>
+						<p class="overlay-category">Branding, Apparel</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="/healthandlove">
+			<div id="healthandlove" class="marg-2-vert workbox square-adjusted">
+				<!--<img class="absolute-center" src="assets/images/healthandlove.png">-->
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Health &amp; Love</p>
+						<p class="overlay-subtitle">Sexual Health for Cambodians</p>
+						<p class="overlay-category">UI/UX, Branding, Character Design</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="/nyonyum">
+			<div id="friends-nyonyum" class="marg-2-vert workbox rectangle">
+				<img src="assets/images/nyonyum.png">
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Friends International</p>
+						<p class="overlay-subtitle">Social Enterprise</p>
+						<p class="overlay-category">Marketing</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="/thetatau">
+			<div id="thetatau-lego" class="marg-2-vert workbox rectangle">
+				<img class="absolute-center" src="assets/images/lego_rush_flyer.png">
+				<div class="overlay">
+					<div class="overlay-text-container absolute-center">
+						<p class="overlay-title header-fontstyle">Theta Tau</p>
+						<p class="overlay-subtitle">Engineering Club</p>
+						<p class="overlay-category">Marketing</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>

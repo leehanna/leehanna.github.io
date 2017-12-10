@@ -1,0 +1,75 @@
+---
+layout: base
+---
+
+<div id="works-header">
+	<img src={{ page.image_folder_link | append: page.logo_filename | relative_url }}>
+	<p id="work-description" class="header-fontstyle"><b>{{ page.project_name }}:</b> {{ page.description }}</p>
+	<div class="divider"></div>
+</div>
+
+<div id="works-overview" class="grid-12">
+	<img src={{ "assets/images/binderclip.png" | relative_url }} class="binderclip" id="binderclip-left">
+	<img src={{ "assets/images/binderclip.png" | relative_url }} class="binderclip" id="binderclip-right">
+	<div class="grid-6 s-grid-12 pad-2 s-pad-1">
+		<div class="overview-item">
+			<span class="lnr lnr-coffee-cup lnr-big"></span>
+			<div>
+				<h4 class="header-fontstyle">Brief</h4>
+				<p>{{ page.brief }}</p>
+			</div>
+		</div>
+		<div class="overview-item">
+			<span class="lnr lnr-mustache lnr-big"></span>
+			<div>
+				<h4 class="header-fontstyle">My Role &amp; Time Spent</h4>
+				<p>{{ page.my_role }}</p>
+				<p id="time-spent"><span class="lnr lnr-hourglass"></span>{{ page.time_spent }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="overview-col grid-6 s-grid-12 pad-2 s-pad-1">
+		<div class="overview-item">
+			<span class="lnr lnr-construction lnr-big"></span>
+			<div>
+				<h4 class="header-fontstyle">Objectives &amp; Challenges</h4>
+				<ul>
+				{% for obj in page.objectives %}
+				    <li>{{ obj }}</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="overview-item">
+			<span class="lnr lnr-magic-wand lnr-big"></span>
+			<div>
+				<h4 class="header-fontstyle">Methods / Tools</h4>
+				<ul>
+				{% for t in page.tools %}
+				    <li>{{ t }}</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="work-container" class="grid-12 s-pad-0 pad-3">
+	{{ content }}
+</div>
+
+<div id="more-works" class="grid-12">
+	<h3 class="header-fontstyle">More Works</h3>
+	<div class="divider"></div>
+	<div id="more-works-container" class="grid-12">
+		<div class="grid-4 pad-2">
+			<div id="{{ page.related1 }}" class="workbox square"></div>
+		</div>
+		<div class="grid-4 pad-2">
+			{{ page.related2 }}
+		</div>
+		<div class="grid-4 pad-2">
+			{{ page.related3 }}
+		</div>
+	</div>
+</div>

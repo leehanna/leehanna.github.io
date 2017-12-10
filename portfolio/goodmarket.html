@@ -1,0 +1,110 @@
+---
+layout: works
+title: "Hanna Lee - Good Market"
+permalink: "/portfolio/goodmarket"
+image_folder_link: "/assets/images/goodmarket/"
+logo_filename: "goodmarket_logo-01.png"
+project_name: "Good Market"
+description: "a mobile grocery store platform"
+
+brief: "Good Market is an app that I designed as part of DesignLab’s Interaction Design certification course for a fictional supermarket. The company’s goal was to reach a larger market by developing a preliminary online platform geared towards young business professionals."
+my_role: "Given business goals and target users, I was responsible for coming up with an idea and developing high-fidelity prototypes to test it."
+time_spent: "40 hours"
+objectives:
+  - Research competition and target users
+  - Come up with an intuitive categorization of grocery items for maximum searchability
+  - Prepare high-fidelity prototypes for user testing
+tools:
+  - Card sorting interview
+  - User flows
+  - Sitemap
+  - Wireframes
+  - Sketch App
+  - Adobe Invision
+
+related1: spetcial
+related2: healthandlove
+related3: swdb
+---
+
+<div class="work-section">
+	<h2 class="header-fontstyle">1. Understanding the Problem + Research</h2>
+	<h4 class="subheader-fontstyle">Business Goals + User Goals</h4>
+	<p>I first outlined the goals and pain points of the supermarket and the target users respectively to find overlaps.</p>
+	<div class="img-container">
+		<img src={{page.image_folder_link | append: "business_goals.png" }} class="img-3quarters-width">
+	</div>
+	<h4 class="subheader-fontstyle">Competitive Analysis</h4>
+	<p>I then researched competitors to identify which features created the most value. I analyzed Instacart in particular since it has high praises for being user-friendly and learned how the app addressed usability problems and where it fell short.</p>
+	<div class="links">
+		<ul>
+			<li><a class="link-fontstyle" href={{page.image_folder_link | append: "competitive_analysis.pdf" }}>Competitive Analysis</a></li>
+			<li><a class="link-fontstyle" href={{page.image_folder_link | append: "usability_deep_dive.pdf" }}>Instacart Usability Deep Dive</a></li>
+		</ul>
+	</div>
+	<h4 class="subheader-fontstyle">Context of Use Scenarios</h4>
+	<p>After getting a good idea of the current market, it was time to get a better idea of when the user will be using the app. Here is the <a href={{page.image_folder_link | append: "context_of_use.pdf" }} class="link-fontstyle">resulting report</a> that was based on the provided personas and some common context of use questions.</p>
+</div>
+
+<div class="work-section">
+	<h2 class="header-fontstyle">2. Experience Strategy</h2>
+	<h4 class="subheader-fontstyle">Card Sorting</h4>
+	<p>The key difference in the searchability of the apps I examined was how they organized their grocery items. To understand users’ conceptual models of grocery categories, I conducted a card sorting exercise with 3 young tech savvy business professionals and roughly grouped the results to spot similarities.</p>
+	<div class="img-container">
+		<img src={{page.image_folder_link | append: "card_sorting.png" }}>
+	</div>
+	<h4 class="subheader-fontstyle">Information Architecture</h4>
+	<p>After analyzing the results from the card sorting exercise and what kind of category groups competitors chose to use, I began to structure the content in a sitemap.<br/>
+	While arranging the items in the sitemap, I thought about how each page is connected with other pages. For example, in grocery stores, items on sale are prominently highlighted with special price tags in an aisle with other similar products to catch shoppers’ attention. I modeled this in my sitemap by having a section within the Department section that displays Coupon deals (represented by the yellow arrows).</p>
+	<div class="img-container">
+		<img src={{page.image_folder_link | append: "sitemap.jpg" }}>
+	</div>
+	<h4 class="subheader-fontstyle">User Flows</h4>
+	<p>Next, I examined what steps a user might want to take to accomplish his/her goals, and adjusted the sitemap to accommodate these possible actions. The result looked <a href={{page.image_folder_link | append: "userflow.pdf" }} class="link-fontstyle">something like this</a>.</p>
+	<h4 class="subheader-fontstyle">Wireframes</h4>
+	<p>After structuring the content of the app, I arranged the information on each page with wireframes. I used SketchApp with the Teracy wireframe kit to create them more quickly.</p>
+	<div class="img-container">
+		<img src={{page.image_folder_link | append: "sitemap_with_wireframes.jpg" }}>
+	</div>
+	<h4 class="subheader-fontstyle">Wireframe User Testing</h4>
+	<p>Once I made the wireframes, I created a low-fidelity, interactive prototype to see how they performed with real users. Users were asked to accomplish 3 tasks: 1) signup, 2) find a product, 3) add it to the shopping cart, 4) checkout. I then refined my wireframes with the resulting findings.</p>
+</div>
+
+<div class="work-section">
+	<h2 class="header-fontstyle">3. Visual Design</h2>
+	<h4 class="subheader-fontstyle">Logo Design</h4>
+	<p>For Good Market’s logo, I chose bright, fresh colors and a modern geometric font, and shaped the shopping basket as a G.</p>
+	<div class="grid-4 s-grid-12 pad-2 s-pad-0">
+		<div class="img-container">
+			<img src={{ page.image_folder_link | append: "goodmarket_logo-01.png" }}>
+		</div>
+	</div>
+	<div class="grid-4 s-grid-12 pad-2 s-pad-0">
+		<div class="img-container">
+			<img src={{ page.image_folder_link | append: "goodmarket_logo-02.png" }}>
+		</div>
+	</div>
+	<div class="grid-4 s-grid-12 pad-2 s-pad-0">
+		<div class="img-container">
+			<img src={{ page.image_folder_link | append: "goodmarket_logo-04.png" }}>
+		</div>
+	</div>
+	<h4 class="subheader-fontstyle">UI Design</h4>
+	<p>Following the friendly colorful look of the logo, I fleshed out the <a href="https://invis.io/SADUMPP9N" class="link-fontstyle">wireframes</a>.</p>
+	<div class="img-container">
+		<img id="goodmarket-demo" src={{ "assets/images/goodmarket_demo.gif" | relative_url }}>
+	</div>
+</div>
+
+<div class="work-section">
+	<h4 class="header-fontstyle">Reflections</h4>
+	<p>As with any ecommerce website, there were a lot of user interactions to think about when designing this application, so this project was very fun. I narrowed my scope to just the mobile app because of the variety of these possible interactions. However, next time I have a more complex project, I would like to tackle designing responsively from the beginning.</p>
+</div>
+
+
+
+
+
+
+
+
