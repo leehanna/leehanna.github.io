@@ -22,7 +22,7 @@ $font-secondary: "Open Sans", sans-serif;
   	display: flex;
 }
 
-a, p, li {
+a, p, li, h1 {
 	padding: 0;
 	margin: 0;
 	font-family: $font-primary;
@@ -66,6 +66,15 @@ a, p, li {
 
 .link-fontstyle:hover {
 	color: $highlight-color;
+}
+
+.bordered {
+	border: 1px solid $light-gray;
+}
+
+.extra-top-space {
+	margin-top: 30px;
+	display: inline-block;
 }
 
 #navigation {
@@ -147,80 +156,36 @@ main.container {
 	}
 }
 
-// #goodmarket {
-// 	background-color: $light-gray;
-// 	img {
-// 		height: 70%;
-// 		width: auto;
-// 	}
-// }
-
 #goodmarket {
 	background: $light-gray url("images/goodmarket_demo.gif") no-repeat center/45%;
 }
-
-// #spetcial {
-// 	img {
-// 		height: 100%;
-// 		width: auto;
-// 		top: 0;
-// 	}
-// }
 
 #spetcial {
 	background: url("images/spetcial.jpg") no-repeat center;
 	background-size: auto 100%;
 }
 
-// #swdb {
-// 	background-color: rgb(241, 229, 227);
-// 	img {
-// 		height: 95%;
-// 		width: auto;
-// 	}
-// }
-
 #swdb {
 	background: $secondary-color url("images/swdb.png") no-repeat center / 80%;
 }
 
-// #adeste-fideles {
-// 	background-color: rgb(210, 197, 198);
-// 	img {
-// 		top: 0;
-// 		width: 100%;
-// 	}
-// }
-
-#adeste-fideles {
+#adestefideles {
 	background: $highlight-color-light url("images/adeste_fideles.png") no-repeat top center;
 	background-size: 100% auto;
 }
-// #healthandlove {
-// 	background-color: rgb(241, 229, 227);
-// 	img {
-// 		width: 75%;
-// 	}
-// }
 
 #healthandlove {
 	background: $secondary-color url("images/healthandlove.png") no-repeat center / 70%;
 }
-#friends-nyonyum {
-	background-color: $light-gray;
-	img {
-		bottom: -50%;
-		right: -5%;
-		height: 230%;
-		width: auto;
-	}
+
+#nyonyum {
+	background: $light-gray url("images/nyonyum.png") no-repeat;
+	background-size: 175% auto;
+	background-position: bottom 40% right 5%;
 }
-#thetatau-lego {
-	background-color: rgb(210, 197, 198);
-	img {
-		height: 100%;
-		width: auto;
-	}
+
+#thetatau {
+	background: $highlight-color-light url("images/lego_rush_flyer.png") no-repeat center / 75%;
 }
 
 .workbox:before {
@@ -247,11 +212,25 @@ main.container {
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	top: 0;
-	left: 0;
-	background: url("../assets/images/banana_leaves.jpg") repeat;
 	opacity: 0;
 	transition: opacity 0.5s;
+	top: 0;
+	left: 0;
+}
+
+.overlay-homepage {
+	background: url("../assets/images/banana_leaves.jpg") repeat;
+}
+
+.overlay-simple {
+	background-color: rgba(0,0,0,0.6);
+	@include flex;
+	justify-content: center;
+	align-items: center; 
+	p {
+		color: white;
+		font-weight: 600;
+	}
 }
 
 .overlay-text-container {
@@ -292,11 +271,13 @@ main.container {
 }
 
 .workbox:hover .overlay {
-	opacity: 1;
 	cursor: pointer;
+	opacity: 1;
 }
 
+
 // footer
+
 #footer {
 	position: relative;
 	text-align: center;
@@ -432,13 +413,14 @@ main.container {
 }
 
 .work-section {
-	padding: 20px 0;
+	padding: 10px 0;
 
 	h2 {
 		font-weight: 800;
 		font-size: 20px;
+		display: block;
 	}
-	p {
+	p, li {
 		font-family: $font-secondary;
 		font-weight: 300;
 	}
@@ -450,7 +432,7 @@ main.container {
 .links {
 	text-align: center;
 	padding-top: 20px;
-	ul { 
+	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -468,7 +450,8 @@ main.container {
 
 .img-container {
 	width: 100%;
-	margin: 30px 0;
+	margin: 20px 0;
+	text-align: center;
 	img {
 		width: 100%;
 		display: block;
@@ -477,10 +460,22 @@ main.container {
 	.img-3quarters-width {
 		width: 75%;
 	}
+	.img-half-width {
+		width: 50%;
+	}
+	.img-caption {
+		font-style: italic;
+		margin: 20px 0;
+	}
+}
+
+.centered {
+	align-content: center;
 }
 
 #more-works {
 	text-align: center;
+	margin: 50px 0;
 	h3 {
 		color: $highlight-color;
 		margin: 0;
@@ -491,7 +486,11 @@ main.container {
 	display: block;
 }
 
-#goodmarket-demo {
-	max-width: 300px;
+.img-mobile-screen {
+	max-width: 350px;
 	width: 100%;
+}
+
+#nyonyum-full, #legoflyer-full {
+	background-color: $light-gray;
 }

@@ -1,10 +1,18 @@
 ---
 layout: base
+project_name_pretty:
+  "healthandlove" : "Health &amp; Love"
+  "spetcial" : "Spetcial"
+  "goodmarket" : "Good Market"
+  "swdb" : "Statewide Database"
+  "adestefideles" : "Adeste Fideles"
+  "nyonyum" : "Friends Interational"
+  "thetatau" : "Theta Tau"
 ---
 
 <div id="works-header">
-	<img src={{ page.image_folder_link | append: page.logo_filename | relative_url }}>
-	<p id="work-description" class="header-fontstyle"><b>{{ page.project_name }}:</b> {{ page.description }}</p>
+	<img src={{ site.imagesurl | append: page.slug | append: "/" | append: page.logo_filename | relative_url }}>
+	<p id="work-description" class="header-fontstyle"><b>{{ layout.project_name_pretty[page.slug] }}:</b> {{ page.description }}</p>
 	<div class="divider"></div>
 </div>
 
@@ -17,6 +25,13 @@ layout: base
 			<div>
 				<h4 class="header-fontstyle">Brief</h4>
 				<p>{{ page.brief }}</p>
+				{% if page.brief_links %}
+					<ul>
+						{% for lnk in page.brief_links %}
+							<li><a href={{ lnk[1] }} class="link-fontstyle">{{ lnk[0] }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</div>
 		</div>
 		<div class="overview-item">
@@ -62,14 +77,16 @@ layout: base
 	<h3 class="header-fontstyle">More Works</h3>
 	<div class="divider"></div>
 	<div id="more-works-container" class="grid-12">
-		<div class="grid-4 pad-2">
-			<div id="{{ page.related1 }}" class="workbox square"></div>
-		</div>
-		<div class="grid-4 pad-2">
-			{{ page.related2 }}
-		</div>
-		<div class="grid-4 pad-2">
-			{{ page.related3 }}
-		</div>
+		{% for work in page.related_works %}
+			<div class="grid-4 pad-2">
+				<a href={{ "portfolio/" | append: work | relative_url }}>
+					<div id={{ work }} class="workbox square">
+						<div class="overlay overlay-simple">
+							<p class="header-fontstyle">{{ layout.project_name_pretty[work] }}</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
 	</div>
 </div>
