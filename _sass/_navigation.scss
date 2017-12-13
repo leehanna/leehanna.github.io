@@ -161,7 +161,7 @@
        }
        a:hover li::after {
           transform: scale3d(1,1,1);
-          @include compatible-transition(transform, 0.25s, linear);
+          @include compatible-transition(transform, 0.2s, $cubic-bezier);
        }
       }
   }
@@ -175,7 +175,7 @@
 
   nav {
     right: 30px;
-    margin-top: 7px;
+    margin-top: 11px;
   }
 
   #menu-toggle input {
