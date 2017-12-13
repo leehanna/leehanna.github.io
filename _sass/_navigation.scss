@@ -1,0 +1,210 @@
+#logo {
+  img {
+    height: 35px;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  p {
+    font-weight: 700 !important;
+    display: inline;
+    line-height: 35px;
+    vertical-align: top;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    color: $darker-gray;
+  }
+}
+
+  #navigation {
+    position: relative;
+    padding: 30px 0;
+    width: 100%;
+    #logo, nav {
+      position: absolute;
+    }
+  }
+
+@media only screen and (min-width: 480px) {
+  #navigation{
+    display: inline-block;
+    nav {
+       right: 30px;
+       a {
+        font-decoration: none;
+       }
+       ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: auto;
+       }
+       li {
+         font-size: 12px;
+         font-weight: 500;
+         line-height: 35px;
+         text-decoration: none;
+         margin: 0 15px;
+         float: left;
+         display: inline-block;
+
+       }
+       li::after {
+          content: '';
+          box-sizing: inherit;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          border-bottom: 3px solid $highlight-color;
+          transform-origin: center;
+          transform: scale3d(0,1,1);
+       }
+       a:hover li {
+          color: $highlight-color;
+       }
+       a:hover li::after {
+          transform: scale3d(1,1,1);
+          transition: transform 0.25s;
+       }
+      }
+  }
+
+  #menu-toggle input {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  nav {
+    right: 30px;
+    margin-top: 7px;
+  }
+
+  #menu-toggle input {
+  	 display: block;
+  	 width: 40px;
+  	 height: 40px;
+    	position: absolute;
+
+    	cursor: pointer;
+    
+    	opacity: 0; /* hide this */
+    	z-index: 2; /* and place it over the hamburger */
+    
+    	-webkit-touch-callout: none;
+  }
+
+  #menu-toggle span
+  {
+    	display: block;
+    	width: 20px;
+    	height: 3px;
+    	margin-bottom: 4px;
+    	position: relative;
+    
+    	background: $dark-gray;
+    	border-radius: 3px;
+    
+    	z-index: 1;
+    
+    	transform-origin: 4px 0px;
+
+    	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                	background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                	opacity 0.55s ease,
+                  background 0.5s ease;
+  }
+
+  #menu-toggle span:hover {
+    background: $highlight-color;
+  }
+
+  #menu-toggle span:first-child
+  {
+    	transform-origin: 0% 0%;
+  }
+
+  #menu-toggle span:nth-last-child(2)
+  {
+    	transform-origin: 0% 100%;
+  }
+
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menu-toggle input:checked ~ span
+  {
+      opacity: 1;
+      transform: rotate(45deg) translate(1px, 0px);
+      background: $dark-gray;
+  }
+
+  /*
+   * But let's hide the middle one.
+   */
+  #menu-toggle input:checked ~ span:nth-last-child(3)
+  {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menu-toggle input:checked ~ span:nth-last-child(2)
+  {
+      transform: rotate(-45deg) translate(3px, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    margin-top: -45px;
+    right: -35px;
+    padding: 40px 0 40px 0;
+    text-align: center;
+    width: 0px;
+    overflow: hidden;
+
+    background: white;
+    @include lightshadow;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    
+    transition: width 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 40px;
+      text-decoration: none;
+    }
+    a:hover li {
+      color: $highlight-color;
+    }
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 18px;
+    transition: color 0.5 ease;
+    white-space: nowrap;
+  }
+
+  /*
+   * And let's slide it in from the left
+   */
+  #menu-toggle input:checked ~ ul
+  {
+    width: 250px;
+    // transform: translate(-100%, 0);
+  }
+}

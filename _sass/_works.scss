@@ -1,0 +1,169 @@
+
+// works
+
+#works-header {
+	padding: 20px 0;
+	text-align: center;
+	img {
+		height: 250px;
+		display: inline-block;
+	}
+}
+
+#work-description {
+	font-size: 12px;
+	color: $highlight-color;
+	max-width: 450px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#works-overview {
+	padding: 35px 35px;
+	background-color: $light-gray;
+	position: relative;
+	@include lightshadow;
+}
+
+.binderclip {
+	height: 60px;
+	position: absolute;
+	top: -40px;
+}
+
+#binderclip-left {
+	left: 40px;
+}
+
+#binderclip-right {
+	right: 40px;
+}
+
+.lnr-big {
+	font-size: 35px;
+	color: $highlight-color;
+	width: 35px;
+	margin-right: 15px;
+}
+
+.overview-item {
+	@include flex;
+	-webkit-flex-direction: row; 
+  	flex-direction: row;
+  	padding: 15px 0;
+
+  	ul {
+  		padding-left: 20px;
+  	}
+
+	p, li {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+	}
+	h4 {
+		padding: 0;
+		margin: 0 0 10px 0;
+		color: $highlight-color;
+		font-weight: 800;
+	}
+}
+
+#time-spent { margin-top: 5px;}
+#time-spent > span { margin-right: 5px; }
+
+#work-container {
+}
+
+.work-section {
+	padding: 10px 0;
+
+	h2 {
+		font-weight: 800;
+		font-size: 20px;
+		display: block;
+	}
+	p, li {
+		font-family: $font-secondary;
+		font-weight: 300;
+	}
+	h2, h4 {
+		color: $dark-gray;
+	}
+}
+
+.links {
+	text-align: center;
+	padding-top: 20px;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		li {
+			float: left;
+			display: inline-block;
+			padding: 0 10px;
+		}
+		li+li {
+			border-left: 1px solid $dark-gray;
+		}
+	}
+}
+
+#brief-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		padding-right: 15px;
+	}
+}
+
+.img-container {
+	width: 100%;
+	margin: 20px 0;
+	text-align: center;
+	img {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	.img-3quarters-width {
+		width: 75%;
+	}
+	.img-half-width {
+		width: 50%;
+	}
+	.img-caption {
+		font-style: italic;
+		max-width: 450px;
+		width: 100%;
+		margin: 20px auto;
+	}
+}
+
+.centered {
+	align-content: center;
+}
+
+#more-works {
+	text-align: center;
+	margin: 50px 0;
+	h3 {
+		color: $highlight-color;
+		margin: 0;
+	}
+}
+
+#more-works-container {
+	display: block;
+}
+
+.img-mobile-screen {
+	max-width: 350px;
+	width: 100%;
+}
+
+#nyonyum-full, #legoflyer-full {
+	background-color: $light-gray;
+}

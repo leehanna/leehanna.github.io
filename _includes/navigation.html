@@ -1,8 +1,21 @@
 <div id="navigation">
-	<a href={{ site.baseurl }}><img src={{ "assets/images/hannabanana_small.svg" | relative_url }} id="thumblogo"></a>
-	<nav>
-		<a class="header-fontstyle" href={{ site.baseurl }}>Portfolio</a>
-		<a class="header-fontstyle" href="#">Profile</a>
-		<a class="header-fontstyle" href="#">Ping Me</a>
+	<div id="logo">
+		<a href={{ site.baseurl }}><img src={{ "assets/images/hannabanana_small.svg" | relative_url }} id="thumblogo"></a>
+		<p class="header-fontstyle">Hanna Lee</p>
+	</div>
+	<nav role="navigation">
+		<div id="menu-toggle">
+			<input type="checkbox" />
+
+			<!--hamburger-->
+			<span></span>
+    		<span></span>
+    		<span></span>
+    		<ul id="menu">
+				<a class="header-fontstyle" href={{ site.baseurl }}><li>Portfolio</li></a>
+				<a class="header-fontstyle" href="#"><li>Profile</li></a>
+				<a class="header-fontstyle" href="#"><li>Ping Me</li></a>
+			</ul>
+		</div>
 	</nav>
 </div>
