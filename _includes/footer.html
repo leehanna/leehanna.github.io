@@ -9,3 +9,41 @@
 	</div>
 	<p id="copyright">2017 © Hanna Lee - All rights reserved</p>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 40) {
+    $('#navigation').addClass('shrink');
+  } else {
+    $('#navigation').removeClass('shrink');
+  }
+});
+// var _window = $(window),
+//     header = $('#navigation'),
+//     max = 20,
+//     min = 10,
+//     padding = parseFloat(header.css('padding-top')),
+//     currentPadding = padding,
+//     height = parseFloat(header.css('height')),
+//     currentHeight = height,
+//     scrollPos = _window.scrollTop();
+    
+// _window.scroll(function() {  
+   
+//     if (scrollPos < _window.scrollTop() && currentPadding > min ) {
+//         header.css('padding', --currentPadding + 'px 0');
+//         currentHeight -= 2;
+//         header.css('height', currentHeight + 'px');
+//     } else if (scrollPos > _window.scrollTop() && currentPadding < max) {
+//         header.css('padding', ++currentPadding + 'px 0');
+//         currentHeight += 2;
+//         header.css('height', currentHeight + 'px');
+//     }
+    
+//     if (_window.scrollTop() == 0)
+//         header.css('padding', padding + 'px 0');
+    
+//     scrollPos = _window.scrollTop();
+// });
+</script>
