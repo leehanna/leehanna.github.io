@@ -1,16 +1,79 @@
 // -------------- navigation --------------
 
+#hanna-banana {
+  width: 80px;
+  height: 80px;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: inline-block;
+  path {
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: dash 3s forwards;
+  }
+  .cls-1, .cls-2 {
+    fill-opacity: 0;
+  }
+}
+
+#logo:hover {
+  // path {
+  //   animation: dash 3s infinite;
+  // }
+  // .cls-1, .cls-2 {
+  //   animation: fill-in 3s infinite;
+  // }
+  path, .cls-1, .cls-2 {
+    animation: draw 3s infinite;
+  }
+}
+
+@keyframes draw {
+  0% {
+    fill-opacity: 0;
+  }
+  30% {
+    fill-opacity: 0;
+  }
+  90% {
+    stroke-dashoffset:0;
+    fill-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset:0;
+    fill-opacity: 1;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-in {
+  0% {
+    fill-opacity: 0;
+  }
+  60% {
+    fill-opacity: 0;
+  }
+  80% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+  // from { fill-opacity: 0; }
+  // to { fill-opacity: 1; }
+}
+
 #logo {
   a {
     text-decoration: none;
   }
   a:hover p {
     color: $highlight-color;
-  }
-  img {
-    height: 35px;
-    padding-left: 30px;
-    padding-right: 10px;
   }
   p {
     font-weight: 700 !important;
@@ -23,7 +86,7 @@
   }
 }
 
-  #navigation {
+#navigation {
     position: relative;
     padding: 30px 0;
     width: 100%;
