@@ -14,6 +14,8 @@ $light-gray: #f0f0f0;
 $font-primary: "Raleway", sans-serif;
 $font-secondary: "Open Sans", sans-serif;
 
+$cubic-bezier: cubic-bezier(0.77,0.2,0.05,1.0);
+
 @mixin flex {
 	display: -webkit-box;
   	display: -moz-box;
@@ -33,7 +35,7 @@ $font-secondary: "Open Sans", sans-serif;
 	box-shadow: 0px 0px 15px rgba(102,102,102,0.2);
 }
 
-@import "works";
+@import "work.article";
 @import "navigation";
 
 body {
@@ -96,14 +98,32 @@ a, p, li, h1 {
 	display: inline-block;
 }
 
+.divider, .growing-divider {
+	height: 4px;
+	display: inline-block;
+	background-color: $highlight-color;
+}
 
+.divider {
+	width: 70px;
+	margin: 20px 0;
+}
+
+.growing-divider {
+	width: 0px;
+	margin: 13px 0;
+	transition: width 0.5s $cubic-bezier;
+}
 
 main.container {
 	width: 100%;
+	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
 }
+
+// -------------- homepage --------------
 
 #home-header {
 	text-align: center;
@@ -123,31 +143,20 @@ main.container {
 
 #hero-fontstyle {
 	font-weight: 300;
-	font-size: 28px;
-	max-width: 340px;
+	font-size: 35px;
+	max-width: 370px;
 	width: 100%;
 	text-transform: uppercase;
 	margin: 0 auto;
 }
 
-.divider, .growing-divider {
-	height: 4px;
-	display: inline-block;
-	background-color: $highlight-color;
+#logo-small {
+	width: 40px;
+	margin-bottom: 20px;
 }
 
-.divider {
-	width: 70px;
-	margin: 20px 0;
-}
 
-.growing-divider {
-	width: 0px;
-	margin: 13px 0;
-	transition: width 0.5s ease;
-}
-
-// portfolio works
+// ---------- portfolio works ----------
 
 #works {
 	position: relative;
@@ -159,33 +168,42 @@ main.container {
 	display: block;
 	width: 100%;
 	overflow: hidden;
-	img {
-		position: absolute;
-	}
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: transform 0.5s ease;
+}
+
+.bg-img {
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: transform 0.5s $cubic-bezier;
 }
 
 #goodmarket {
-	background: $light-gray url("images/goodmarket_demo.gif") no-repeat center/45%;
+	background: $secondary-color url("images/goodmarket_demo.gif") no-repeat center/45%;
 }
 
 #spetcial {
-	background: url("images/spetcial.jpg") no-repeat center;
-	background-size: auto 100%;
+	background-image: url("images/spetcial/spetcial_demo.jpg")
 }
 
 #swdb {
-	background: $secondary-color url("images/swdb/swdb_mockup.jpg") no-repeat center;
-	background-size: 100% auto;
+	background-image: url("images/swdb/swdb_mockup.jpg");
 }
 
 #adestefideles {
-	background: url("images/adestefideles/adestefideles_shirt_mockup.jpg") no-repeat center;
-	background-size: auto 100%;
+	background-image: url("images/adestefideles/adestefideles_shirt_mockup.jpg");
 }
 
 #healthandlove {
-	background: url("images/healthandlove/healthandlove_demo.jpg") no-repeat center;
-	background-size: auto 100%;
+	background-image: url("images/healthandlove/healthandlove_demo.jpg");
 }
 
 #nyonyum {
@@ -195,7 +213,7 @@ main.container {
 }
 
 #thetatau {
-	background: $highlight-color-light url("images/lego_rush_flyer.png") no-repeat center / 75%;
+	background: $secondary-color url("images/lego_rush_flyer.png") no-repeat center / 75%;
 }
 
 .workbox:before {
@@ -205,6 +223,17 @@ main.container {
 
 .square:before {
 	padding-top: 100%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+	.square-adjusted:before {
+		padding-top: -moz-calc(100% - 8px);
+		padding-top: -webkit-calc(100% - 8px);
+		/* Opera */
+		padding-top: -o-calc(100% - 8px);
+		/* Standard */
+		padding-top: calc(100% - 8px);
+	}
 }
 
 .rectangle:before {
@@ -220,9 +249,6 @@ main.container {
 	top: 0;
 	left: 0;
 	@include transition;
-}
-
-.overlay-homepage {
 	background: -moz-linear-gradient(top,  rgba(102,102,102,0.4) 0%, rgba(102,102,102,0.75) 100%); /* FF3.6+ */
   	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,102,102,0.4)), color-stop(100%,rgba(102,102,102,0.75))); /* Chrome,Safari4+ */
   	background: -webkit-linear-gradient(top,  rgba(102,102,102,0.4) 0%,rgba(102,102,102,0.75) 100%); /* Chrome10+,Safari5.1+ */
@@ -230,17 +256,6 @@ main.container {
   	background: -ms-linear-gradient(top,  rgba(102,102,102,0.4) 0%,rgba(102,102,102,0.75) 100%); /* IE10+ */
   	background: linear-gradient(to bottom,  rgba(102,102,102,0.4) 0%,rgba(102,102,102,0.75) 100%); /* W3C */
   	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
-}
-
-.overlay-simple {
-	background-color: rgba(102,102,102,0.6);
-	@include flex;
-	justify-content: center;
-	align-items: center; 
-	p {
-		color: white;
-		font-weight: 600;
-	}
 }
 
 .overlay-text-container {
@@ -253,7 +268,7 @@ main.container {
 
 	p {
 		color: white;
-		transition: padding 0.5s ease;
+		transition: padding 0.5s $cubic-bezier;
 	}
 
 	.overlay-title {
@@ -281,6 +296,11 @@ main.container {
 
 .workbox:hover .overlay-text-container p {
 	padding: 0;
+}
+
+.workbox:hover .bg-img {
+	transform: scale(1.1);
+	z-index: 99;
 }
 
 
@@ -329,14 +349,15 @@ main.container {
 	background-size: contain;
 	display: inline-block;
 	line-height: 30px;
+	transition: background 0.5s ease;
 }
 
 .social-media-icon:hover {
 	pointer: cursor;
 }
 
-#linkedin { background: url( {{ "assets/images/linkedin.svg" | relative_url }} ); }
-#linkedin:hover { background: url( {{ "assets//linkedin_filled.svg" | relative_url }} ); }
+#linkedin { background: url( {{ "assets/images/linkedin.svg" | relative_url }} );}
+#linkedin:hover { background: url( {{ "assets/images/linkedin_filled.svg" | relative_url }} ); }
 #behance { background: url("../assets/images/behance.svg"); }
 #behance:hover { background: url("../assets/images/behance_filled.svg"); }
 #github { background: url("../assets/images/github.svg"); }

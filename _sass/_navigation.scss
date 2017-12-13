@@ -1,4 +1,12 @@
+// -------------- navigation --------------
+
 #logo {
+  a {
+    text-decoration: none;
+  }
+  a:hover p {
+    color: $highlight-color;
+  }
   img {
     height: 35px;
     padding-left: 30px;
@@ -24,7 +32,7 @@
     }
   }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
   #navigation{
     display: inline-block;
     nav {
@@ -45,8 +53,7 @@
          text-decoration: none;
          margin: 0 15px;
          float: left;
-         display: inline-block;
-
+         position: relative;
        }
        li::after {
           content: '';
@@ -75,7 +82,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
   nav {
     right: 30px;

@@ -1,12 +1,19 @@
 
-// works
+// ---------- works article page -----------
+
+#works-container {
+	width: 85%;
+	margin: 0 auto;
+}
 
 #works-header {
 	padding: 20px 0;
 	text-align: center;
 	img {
-		height: 250px;
+		max-height: 250px;
+		height: auto;
 		display: inline-block;
+		max-width: 100%;
 	}
 }
 
@@ -71,9 +78,6 @@
 #time-spent { margin-top: 5px;}
 #time-spent > span { margin-right: 5px; }
 
-#work-container {
-}
-
 .work-section {
 	padding: 10px 0;
 
@@ -129,7 +133,8 @@
 		margin: 0 auto;
 	}
 	.img-3quarters-width {
-		width: 75%;
+		max-width: 650px;
+		width: 100%;
 	}
 	.img-half-width {
 		width: 50%;
