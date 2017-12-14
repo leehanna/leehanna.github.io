@@ -106,7 +106,7 @@ a, p, li, h1 {
 	font-weight: 600;
 }
 
-.link-fontstyle:hover {
+.link-fontstyle:hover , .link-fontstyle:focus {
 	color: $highlight-color;
 }
 
@@ -373,7 +373,7 @@ main.container {
 	@include compatible-transition(all, 0.2s, ease);
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
 	background-color: $highlight-color;
 	cursor: pointer;
 	p, span {
@@ -397,16 +397,16 @@ main.container {
 	@include compatible-transition(background, 0.5s, ease);
 }
 
-.social-media-icon:hover {
+.social-media-icon:hover, .social-media-icon:focus {
 	pointer: cursor;
 }
 
 #linkedin { background: url( {{ "assets/images/linkedin.svg" | relative_url }} );}
-#linkedin:hover { background: url( {{ "assets/images/linkedin_filled.svg" | relative_url }} ); }
+#linkedin:hover, #linkedin:focus { background: url( {{ "assets/images/linkedin_filled.svg" | relative_url }} ); }
 #behance { background: url("../assets/images/behance.svg"); }
-#behance:hover { background: url("../assets/images/behance_filled.svg"); }
+#behance:hover, #behance:focus { background: url("../assets/images/behance_filled.svg"); }
 #github { background: url("../assets/images/github.svg"); }
-#github:hover { background: url("../assets/images/github_filled.svg"); }
+#github:hover, #github:focus { background: url("../assets/images/github_filled.svg"); }
 
 #copyright {
 	font-size: 12px;
@@ -538,9 +538,10 @@ input.btn {
 	margin: 0 auto;
 	display: block;
 	margin-top: 20px;
+	background-color: transparent;
 }
 
-input.btn:hover {
+input.btn:hover, input.btn:focus {
 	color: white;
 }
 
