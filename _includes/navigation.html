@@ -1,6 +1,6 @@
 <div id="navigation">
 	<div id="logo">
-		<a href={{ site.baseurl }}>
+		<a href={{ "/" | relative_url }}>
 			<div id="hanna-banana">
 				{% include hannabanana_stroke.svg %}
 			</div>
@@ -16,7 +16,7 @@
     		<span></span>
     		<span></span>
     		<ul id="menu">
-				<a class="header-fontstyle" href={{ site.baseurl }}><li>Home</li></a>
+				<a class="header-fontstyle" href={{ "/" | relative_url }}><li>Home</li></a>
 				<a class="header-fontstyle" href={{ "profile" | relative_url }}><li>Profile</li></a>
 				<a class="header-fontstyle" href={{ "contact" | relative_url }}><li>Contact</li></a>
 			</ul>
