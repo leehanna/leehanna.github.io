@@ -1,0 +1,36 @@
+---
+title: Hanna Lee - Developer and Designer
+layout: base
+permalink: /contact
+---
+<div id="contact-form">
+	<div class="grid-12 pad-3">
+		<h3 class="header-fontstyle">Say Hello 👋</h3>
+		<div class="divider"></div>
+		<form action="https://getsimpleform.com/messages?form_api_token=6ea60a5d9ab3c92c41bd954f5898a373" method="post">
+		  <input type='hidden' name='redirect_to' value="{{ site.url }}/contact?msg=success" />
+		  <div class="grid-6 s-grid-12 pad-1-sides pad-2-vert">
+		  	<label class="header-fontstyle input-label" for='name'>Name*</label><br/>
+		  	<input class="input-box" type='text' name='name'  required>
+		  </div>
+		  <div class="grid-6 s-grid-12 pad-1-sides pad-2-vert">
+		  	<label class="header-fontstyle input-label" for='email'>Email*</label><br/>
+		  	<input class="input-box" type='email' name='email' required>
+		  </div>
+		  <div class="grid-12 pad-1-sides pad-2-vert">
+		  	<label class="header-fontstyle input-label" for='message'>Message*</label><br/>
+		  	<textarea class="input-box" rows="10" name='message' required></textarea>
+		  </div>
+		  <div class="grid-12" id="submit-button-container">
+			<input class="btn" type='submit' value='Send'/>
+			  <div id="success-msg">
+					<p>
+						Your message has been sent.<br/>
+						Thank you!
+						<span><a href="http://cultofthepartyparrot.com/"><img src={{ "assets/images/bananaparrot.gif" | relative_url }}></a></span>
+					</p>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

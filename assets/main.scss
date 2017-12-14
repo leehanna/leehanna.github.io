@@ -122,6 +122,7 @@ main.container {
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 100px;
 	height: auto;
 }
 
@@ -145,7 +146,7 @@ main.container {
 
 #home-header {
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 70px;
 	margin-bottom: 100px;
 	div.links {
 		padding: 0;
@@ -159,13 +160,21 @@ main.container {
 	}
 }
 
-#hero-fontstyle {
+.hero-fontstyle {
 	font-weight: 300;
-	font-size: 35px;
+	text-transform: uppercase;
 	max-width: 370px;
 	width: 100%;
-	text-transform: uppercase;
 	margin: 0 auto;
+}
+
+#hero-huge-fontstyle {
+	font-size: 35px;
+}
+
+#hero-tiny-fontstyle {
+	margin-top: 10px;
+	font-size: 12px;
 }
 
 #logo-small {
@@ -209,7 +218,7 @@ main.container {
 }
 
 #spetcial {
-	background-image: url("images/spetcial/spetcial_demo.jpg")
+	background-image: url("images/spetcial/spetcial_demo.jpg");
 }
 
 #swdb {
@@ -381,7 +390,7 @@ main.container {
 #github:hover { background: url("../assets/images/github_filled.svg"); }
 
 #copyright {
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 200;
 	letter-spacing: 0.5px;
 }
@@ -459,4 +468,94 @@ main.container {
 #resume-link {
 	margin-top: 40px;
 }
+
+// ----------- contact -------------
+
+#contact-form {
+	max-width: 800px;
+	width: 100%;
+	margin: 75px auto 0px auto;
+	h3, p {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+#contact-form > .grid-12 {
+	text-align: center;
+	form {
+		text-align: left;
+	}
+}
+
+.input-box {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 14px;
+	font-family: $font-secondary;
+	font-weight: 300;
+	color: $dark-gray;
+	padding: 8px;
+	border: 1px solid $highlight-color-light;
+	background-color: rgba(210, 197, 198, 0.25);
+	@include compatible-transition(all, 0.25s, ease);
+}
+
+.input-box:focus {
+	outline-width: 0;
+	border: 1px solid $highlight-color;
+	background-color: white;
+}
+
+.input-label {
+	font-size: 14px;
+}
+
+input.btn {
+	border-radius: 0;
+	text-transform: uppercase;
+	color: $dark-gray;
+	font-size: 12px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 20px;
+}
+
+input.btn:hover {
+	color: white;
+}
+
+#success-msg {
+	display: none;
+	background-color: #D5F5E3;
+	border: 1px solid #82E0AA;
+	border-radius: 4px;
+	max-width: 230px;
+	width: 100%;
+	padding: 15px 10px;
+	margin: 20px auto 0px auto;
+	text-align: center;
+	p {
+		text-align: middle;
+		font-size: 14px;
+		width: 100%;
+		span img {
+			height: 16px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

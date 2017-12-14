@@ -1,13 +1,15 @@
 <div id="footer" class="grid-12">
-	<div class="btn">
-		<p class="header-fontstyle"><span class="lnr lnr-envelope"></span>Contact</p>
-	</div>
+	<a href={{ "contact" | relative_url }}>
+		<div class="btn">
+			<p class="header-fontstyle"><span class="lnr lnr-envelope"></span>Contact</p>
+		</div>
+	</a>
 	<div id="social-media">
 		<a href="https://www.linkedin.com/in/hannalee95"><div id="linkedin" class="social-media-icon"></div></a>
 		<a href="https://www.behance.net/leehannaa"><div id="behance" class="social-media-icon"></div></a>
 		<a href="https://github.com/leehanna"><div id="github" class="social-media-icon"></div></a>
 	</div>
-	<p id="copyright">2017 © Hanna Lee - All rights reserved</p>
+	<p id="copyright">2017 © Hanna Lee</p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,5 +20,25 @@ $(window).scroll(function() {
   } else {
     $('#navigation').removeClass('shrink');
   }
+});
+
+// Parse the URL parameter
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// Give the parameter a variable name
+
+$(document).ready(function() {
+	var msg = getParameterByName('msg');
+	if (msg == 'success') {
+		$('#success-msg').show();
+	} 
 });
 </script>
