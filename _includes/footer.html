@@ -14,6 +14,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
+// var time_out;
+
+// function loader() {
+//     time_out = setTimeout(showPage, 3000);
+// }
+
+// function showPage() {
+//   document.getElementById("loader-container").style.display = "none";
+//   document.getElementById("main").style.opacity = "1.0";
+// }
+
 $(window).scroll(function() {
   if ($(document).scrollTop() > 40) {
     $('#navigation').addClass('shrink');
@@ -38,7 +49,8 @@ function getParameterByName(name, url) {
 $(document).ready(function() {
 	var msg = getParameterByName('msg');
 	if (msg == 'success') {
-		$('#success-msg').show();
+		document.getElementById('success-msg').show();
 	} 
 });
+
 </script>

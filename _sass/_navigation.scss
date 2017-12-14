@@ -1,7 +1,7 @@
 // -------------- navigation --------------
 
 
-#hanna-banana {
+.hanna-banana {
   width: 80px;
   height: auto;
     padding-left: 30px;
@@ -17,7 +17,7 @@
   }
 }
 
-#logo:hover {
+#logo:hover, #loader {
   path, .cls-1, .cls-2 {
     animation: draw 3s infinite;
   }

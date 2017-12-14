@@ -2,12 +2,25 @@
 <html>
 {% include head.html %}
 
+<!--{% if page.id and page.id == 'home' %}
+<body onload="showPage()">
+	<div id="loader-container">
+		<div id="loader" class="hanna-banana">
+			{% include hannabanana_stroke.svg %}
+			<p class="header-fontstyle">Loading...</p>
+		</div>
+	</div>
+{% else %}
 <body>
-	{% include navigation.html %}
-	<main class="container">
-		{{ content }}
-	</main>
-	{% include footer.html %}
+{% endif %}-->
+<body>
+	<div id="main" class="fade-in">
+		{% include navigation.html %}
+		<main class="container">
+			{{ content }}
+		</main>
+		{% include footer.html %}
+	</div>
 </body>
 
 </html>
