@@ -40,36 +40,6 @@ $cubic-bezier: cubic-bezier(0.77,0.2,0.05,1.0);
 @import "work.article";
 @import "navigation";
 
-#loader-container {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: $light-gray;
-	z-index: 100;
-}
-
-#loader {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	text-align: center;
-	padding: 0;
-
-	svg {
-		width: 50px;
-		display: block;
-		margin-bottom: 15px;
-		display: inline-block;
-	}
-	p {
-		font-weight: 700;
-		font-style: italic;
-		display: inline-block;
-		color: $dark-gray;
-	}
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -81,7 +51,6 @@ body {
 
 .fade-in {
   opacity:0;
-  // @include compatible-transition(opacity, 0.5s, ease);
   -webkit-animation:fadeIn ease-in 0.5s;
   -moz-animation:fadeIn ease-in 0.5s;
   animation:fadeIn ease-in 0.5s;
