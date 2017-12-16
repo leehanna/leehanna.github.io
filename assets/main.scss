@@ -415,7 +415,7 @@ main.container {
 }
 
 
-// ----------- about -----------
+// ----------- profile -----------
 
 #about-header {
 	margin: 120px auto 60px auto;
@@ -431,7 +431,7 @@ main.container {
 	}
 }
 
-.about-container {
+#about-container {
 	p, li, h5 {
 		color: $dark-gray;
 	}
@@ -457,31 +457,15 @@ main.container {
 	h5 {
 		font-weight: 600;
 	}
+	#pencil {
+		margin: 0 auto;
+		line-height: 45px;
+		vertical-align: middle;
+	}
 }
 
 #about-desc {
 	margin: 20px 0;
-}
-
-#skills {
-	list-style-type: none;
-	text-align: left;
-	padding: 0;
-	padding: 0;
-
-	span {
-		margin-left: -35px;
-		margin-right: 10px;
-		font-size: 25px;
-		position: absolute;
-		top: 10px;
-	}
-
-	li {
-		position: relative;
-		padding: 5px 0;
-		margin-left: 40px;
-	}
 }
 
 #resume-link {
