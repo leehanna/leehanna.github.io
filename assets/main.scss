@@ -177,6 +177,15 @@ main.container {
 	li {
 		color: $highlight-color;
 	}
+	li {
+		float:left;
+		padding: 0 10px;
+		display: inline-block;
+
+	}
+	li+li {
+		border-left: 1px solid $dark-gray;
+	}
 }
 
 .hero-fontstyle {
