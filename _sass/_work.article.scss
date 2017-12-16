@@ -98,9 +98,18 @@
 		padding: 0;
 		display: inline-block;
 		li {
-			float: left;
-			display: inline-block;
+		}
+
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	.links {
+		li {
+			float:left;
 			padding: 0 10px;
+			display: inline-block;
+
 		}
 		li+li {
 			border-left: 1px solid $dark-gray;
