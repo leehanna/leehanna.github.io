@@ -28,7 +28,7 @@ project_name_pretty:
 					{% if page.brief_links %}
 						<ul id="brief-links">
 							{% for lnk in page.brief_links %}
-								<li><a href={{ lnk[1] }} class="link-fontstyle">{{ lnk[0] }}</a></li>
+								<li><span class="lnr lnr-link"></span><a href={{ lnk[1] }} class="link-fontstyle">{{ lnk[0] }}</a></li>
 							{% endfor %}
 						</ul>
 					{% endif %}
