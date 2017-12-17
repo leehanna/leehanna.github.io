@@ -357,6 +357,18 @@ main.container {
 	transform: scale(1.1);
 }
 
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+	.overlay-subtitle, .overlay-category {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+	.overlay-subtitle, .overlay-category {
+		display: none;
+	}
+}
+
 
 // footer
 
