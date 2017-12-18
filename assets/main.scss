@@ -165,49 +165,27 @@ main.container {
 
 #home-header {
 	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 100px;
-	div.links {
-		padding: 0;
-	}
-	ul {
-		font-size: 10px;
-		color: $highlight-color;
-	}
-	li {
-		color: $highlight-color;
-	}
-	li {
-		float:left;
-		padding: 0 10px;
-		display: inline-block;
-
-	}
-	li+li {
-		border-left: 1px solid $dark-gray;
-	}
+	margin-top: 100px;
+	margin-bottom: 130px;
 }
 
-.hero-fontstyle {
+#hero-fontstyle {
 	font-weight: 300;
-	text-transform: uppercase;
-	max-width: 370px;
+	max-width: 570px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0px auto 10px auto;
+	padding: 0 20px;
+	font-size: 26px;
+	b {
+		font-weight: 500;
+	}
 }
 
-#hero-huge-fontstyle {
-	font-size: 35px;
-}
-
-#hero-tiny-fontstyle {
-	margin-top: 10px;
+#hero-desc {
 	font-size: 12px;
-}
-
-#logo-small {
-	width: 40px;
-	margin-bottom: 20px;
+	color: $highlight-color;
+	margin-top: 10px;
+	text-transform: uppercase;
 }
 
 

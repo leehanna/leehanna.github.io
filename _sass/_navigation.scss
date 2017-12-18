@@ -145,13 +145,14 @@
           border-bottom: 3px solid $highlight-color;
           transform-origin: center;
           transform: scale3d(0,1,1);
+          @include compatible-transition(transform, 0.2s, $cubic-bezier);
+
        }
        a:hover li {
           color: $highlight-color;
        }
        a:hover li::after {
           transform: scale3d(1,1,1);
-          @include compatible-transition(transform, 0.2s, $cubic-bezier);
        }
       }
   }
