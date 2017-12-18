@@ -28,11 +28,18 @@ tools:
 related_works: [goodmarket, healthandlove, spetcial]
 ---
 {% assign imagefolderurl = site.imagesurl | append: page.slug | append: "/" | relative_url %}
+<div class="work-section grid-12">
+  <div class="img-container">
+    <img src={{ imagefolderurl | append: "swdb_mockup.jpg"}}>
+  </div>
+</div>
 
 <div class="work-section grid-12">
   <h2 class="header-fontstyle">1. Experience Strategy</h2>
+  <h4 class="subheader-fontstyle">The Problem</h4>
+  <p>There are thousands and thousands of different redistricting files just in California alone, categorized by years, decades, election type, data type, state, district, etc. <b>How can all this data be made more accessible to users?</b>
   <h4 class="subheader-fontstyle">Original Branding and Website Structure</h4>
-  <p>There are many different categories of redistricting data grouped by years or decades. The current website structure requires users to click through multiple links to get to the page with the specific redistricting data by county. Statewide Database does not have branding.</p>
+  <p>The current website structure requires users to click through multiple links to get to the page with the specific redistricting data by county. Statewide Database does not have branding.</p>
   <div class="img-container">
     <img src={{ imagefolderurl | append: "swdb_web_old.jpg"}}>
   </div>

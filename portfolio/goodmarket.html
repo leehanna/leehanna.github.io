@@ -25,9 +25,28 @@ related_works: [healthandlove, spetcial, swdb]
 ---
 {% assign imagefolderurl = site.imagesurl | append: page.slug | append: "/" | relative_url %}
 
+<div class="work-section grid-12">
+	<div class="grid-4 s-grid-12 pad-3 s-pad-1">
+		<div class="img-container">
+			<img src={{ imagefolderurl | append: "homescreen.jpg" }}>
+		</div>
+	</div>
+	<div class="grid-4 s-grid-12 pad-3 s-pad-1">
+		<div class="img-container">
+			<img src={{ imagefolderurl | append: "productDetails.jpg" }}>
+		</div>
+	</div>
+	<div class="grid-4 s-grid-12 pad-3 s-pad-1">
+		<div class="img-container">
+			<img src={{ imagefolderurl | append: "cart.jpg" }}>
+		</div>
+	</div>
+</div>
 
 <div class="work-section grid-12">
 	<h2 class="header-fontstyle">1. Understanding the Problem + Research</h2>
+	<h4 class="subheader-fontstyle">The Problem</h4>
+	<p>Good Market was losing customers because a large portion of their customers, namely young business professionals, could not make the time to physically go to a supermarket. So the main goal was to <b>create a more convenient sjopping experience for busy people.</b></p>
 	<h4 class="subheader-fontstyle">Business Goals + User Goals</h4>
 	<p>I first outlined the goals and pain points of the supermarket and the target users respectively to find overlaps.</p>
 	<div class="img-container">
