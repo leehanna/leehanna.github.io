@@ -11,6 +11,8 @@ $secondary-color: rgb(241, 229, 227);
 $darker-gray: rgb(51,51,51);
 $dark-gray: #666666;
 $light-gray: #f0f0f0;
+$lightest-gray: rgb(250,250,250);
+$bg-color: white;
 $font-primary: "Raleway", sans-serif;
 $font-secondary: "Open Sans", sans-serif;
 
@@ -189,15 +191,20 @@ main.container {
 // -------------- homepage --------------
 
 #home-header {
-	margin: 100px auto 100px auto;
+	top:0;
+	margin-top: 13%;
 	max-width: 600px;
+	width: 100%;
 	text-align: center;
-	padding: 0 20px;
+	padding: 120px 20px 0 20px;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1
 }
 
 .hero-fontstyle {
 	font-weight: 300;
-	width: 100%;
 	b {
 		font-weight: 500;
 	}
@@ -226,8 +233,12 @@ main.container {
 
 #home-about {
 	text-align: center;
-	margin: 125px 0 50px 0;
-	padding: 0 20px;
+	padding: 100px 20px 70px 20px;
+	background-color: $bg-color;
+	img {
+		width: 150px;
+		margin-bottom: 15px;
+	}
 }
 
 #home-about-container {
@@ -235,7 +246,6 @@ main.container {
 	margin: 0 10px;
 	padding: 60px 40px;
 	display: inline-block;
-	box-shadow: 0px -5px 40px white;
 }
 
 #home-about-desc {
@@ -243,6 +253,7 @@ main.container {
 	font-size: 14px;
 	margin: 0 auto 30px auto;
 	display: block;
+	max-width: 500px;
 }
 
 
@@ -250,6 +261,17 @@ main.container {
 
 #works {
 	position: relative;
+	margin-top: 400px;
+	margin-top: -moz-calc(20% + 400px);
+	margin-top: -webkit-calc(20% + 400px);
+	/* Opera */
+	margin-top: -o-calc(20% + 400px);
+	/* Standard */
+	margin-top: calc(20% + 400px);
+	background-color: $bg-color;
+	box-shadow: 0px -20px 30px $bg-color;
+	padding-top: 10px;
+	opacity: 0.1;
 }
 
 .workbox {
@@ -269,40 +291,43 @@ main.container {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-size: cover;
+	background-size: 70% auto;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: $lightest-gray;
 	@include compatible-transition(transform, 0.5s, $cubic-bezier);
 }
 
 #goodmarket {
-	background: $secondary-color url("images/goodmarket_demo.gif") no-repeat center/45%;
+	background-image: url("images/goodmarket/goodmarket_demo.gif");
+	background-size: 45%;
 }
 
 #spetcial {
-	background-image: url("images/spetcial/spetcial_demo.jpg");
+	background-image: url("images/spetcial/spetcial_demo.png");
 }
 
 #swdb {
-	background-image: url("images/swdb/swdb_mockup.jpg");
+	background-image: url("images/swdb/swdb_demo.png");
 }
 
 #adestefideles {
-	background-image: url("images/adestefideles/adestefideles_shirt_mockup.jpg");
+	background-image: url("images/adestefideles/adestefideles_shirt_mockup.png");
+	background-size: 90%
 }
 
 #healthandlove {
-	background-image: url("images/healthandlove/healthandlove_demo.jpg");
+	background-image: url("images/healthandlove/healthandlove_demo.png");
 }
 
 #nyonyum {
-	background: $light-gray url("images/nyonyum/nyonyum.jpg") no-repeat;
-	background-size: auto 120%;
-	background-position: bottom 60% right 20%;
+	background-image: url("images/nyonyum/nyonyum.png");
+	background-size: auto 90%;
+	background-position: bottom 0 right 20%;
 }
 
 #thetatau {
-	background: $secondary-color url("images/lego_rush_flyer.png") no-repeat center / 75%;
+	background-image: url("images/thetatau/legoflyer.png");
 }
 
 .workbox:before {
@@ -409,63 +434,53 @@ main.container {
 #footer {
 	position: relative;
 	text-align: center;
-	padding: 70px 0px;
-	.btn {
-		border: none;
-	}
-}
+	padding: 50px 0px;
+	background-color: $bg-color;
 
-#footer-container {
-	background: url({{ "assets/images/background_photo.jpg" | relative_url }}) no-repeat center;
-	background-size: cover;
-	padding: 100px 20px;
-	margin-bottom: 40px;
-	#or {
-		padding: 20px 0;
+	p {
+		font-weight: 200;
+		letter-spacing: 0.5px;
 	}
-}
 
-.white {
-	color: white !important;
+	#email {
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
 }
 
 #social-media {
 	display: block;
-	margin: 30px auto;
+	margin: 0 auto;
 }
 
 .social-media-icon {
-	margin: 0 5px;
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	background-size: contain;
 	display: inline-block;
 	line-height: 30px;
-	@include compatible-transition(background, 0.5s, ease);
+	svg path {
+		@include compatible-transition(fill, 0.5s, ease);
+		fill: $dark-gray;
+	}
 }
 
 .social-media-icon:hover, .social-media-icon:focus {
 	pointer: cursor;
+	svg path {
+		fill: $highlight-color
+	}
 }
-
-#linkedin { background: url( {{ "assets/images/linkedin.svg" | relative_url }} );}
-#linkedin:hover, #linkedin:focus { background: url( {{ "assets/images/linkedin_filled.svg" | relative_url }} ); }
-#behance { background: url("../assets/images/behance.svg"); }
-#behance:hover, #behance:focus { background: url("../assets/images/behance_filled.svg"); }
-#github { background: url("../assets/images/github.svg"); }
-#github:hover, #github:focus { background: url("../assets/images/github_filled.svg"); }
 
 #copyright {
 	font-size: 12px;
-	font-weight: 200;
-	letter-spacing: 0.5px;
 }
 
 
 // ----------- profile -----------
 
 #about-header {
-	margin: 120px auto 60px auto;
+	margin: 50px auto 60px auto;
 	width: 100%;;
 	max-width: 650px;
 	img {

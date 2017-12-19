@@ -1,18 +1,17 @@
 <div id="footer" class="grid-12">
-	<section id="footer-container" data-type="background"  data-speed="15">
-		<h1 class="section-header header-fontstyle white">Say Hello</h1>
-		<p id="email" class="white">hannallee2@gmail.com</p>
-		<div id="social-media">
-			<a href="https://www.linkedin.com/in/hannalee95"><div id="linkedin" class="social-media-icon"></div></a>
-			<a href="https://www.behance.net/leehannaa"><div id="behance" class="social-media-icon"></div></a>
-			<a href="https://github.com/leehanna"><div id="github" class="social-media-icon"></div></a>
-		</div>
-		<a href={{ "contact" | relative_url }}>
-			<div class="btn">
-				<p class="header-fontstyle">Contact Form</p>
-			</div>
-		</a>
-	</section>
+	<div id="social-media">
+		<a href="https://www.linkedin.com/in/hannalee95"><div id="linkedin" class="social-media-icon">
+			{% include linkedin.svg %}
+		</div></a>
+		<a href="https://github.com/leehanna"><div id="github" class="social-media-icon">
+			{% include github.svg %}
+		</div></a>
+		<a href="https://www.behance.net/leehannaa"><div id="behance" class="social-media-icon">
+			{% include behance.svg %}
+		</div></a>
+	</div>
+	<p id="email">hannallee2@gmail.com</p>
+
 	<p id="copyright">Designed and coded by Hanna Lee © 2017</p>
 </div>
 

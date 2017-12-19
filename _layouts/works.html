@@ -80,11 +80,13 @@ project_name_pretty:
 			{% for work in page.related_works %}
 				<div class="grid-4 pad-2 s-grid-12 s-pad-0-sides">
 					<a href={{ "portfolio/" | append: work | relative_url }}>
-						<div id={{ work }} class="workbox square">
-							<div class="overlay">
-								<div class="overlay-text-container absolute-center">
-									<p class="overlay-title header-fontstyle">{{ layout.project_name_pretty[work] }}</p>
-									<div class="divider growing-divider"></div>
+						<div class="workbox square">
+							<div class="bg-img" id="{{ work }}">
+								<div class="overlay">
+									<div class="overlay-text-container absolute-center">
+										<p class="overlay-title header-fontstyle">{{ layout.project_name_pretty[work] }}</p>
+										<div class="divider growing-divider"></div>
+									</div>
 								</div>
 							</div>
 						</div>
