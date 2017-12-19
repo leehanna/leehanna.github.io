@@ -122,6 +122,15 @@ a, p, li, h1 {
 	font-weight: 300;
 }
 
+.title-desc-fontstyle {
+	font-size: 18px;
+	font-weight: 300;
+	max-width: 500px;
+	width: 100%;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
 .bordered {
 	border: 1px solid $light-gray;
 }
