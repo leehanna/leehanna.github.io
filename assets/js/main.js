@@ -3,7 +3,6 @@ $(window).scroll(function() {
     var scrolledY = $(this).scrollTop();
 
     // parallax
-    // $('#home-header').css('top','+'+ (scrolledY/15) + 'px');
     var imgPos = scrolledY / 10 + 'px';
     $('#home-header').css('transform', 'translate(-50%,' + imgPos + ')');
 
@@ -15,6 +14,8 @@ $(window).scroll(function() {
             return opacity;
         }
     });
+
+    // expand and shrink nav bar on scroll
     if (scrolledY > 40) {
         $('#navigation').addClass('shrink');
     } else {
