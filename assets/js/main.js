@@ -1,12 +1,16 @@
 
 $(window).scroll(function() {
     var scrolledY = $(this).scrollTop();
-    $('#home-header').css('top','+'+ (scrolledY/15) + 'px');
+
+    // parallax
+    // $('#home-header').css('top','+'+ (scrolledY/15) + 'px');
+    var imgPos = scrolledY / 10 + 'px';
+    $('#home-header').css('transform', 'translate(-50%,' + imgPos + ')');
+
+    // fade in
     $('#works').css({
         opacity: function() {
-            // var e = document.querySelector('.square');
-            // var elementHeight = window.getComputedStyle(e).height / 2;
-            var elementHeight = $('.workbox.square').first().height()/2,
+            var elementHeight = $('.square').first().height() / 2,
             opacity = ((1 - (elementHeight - scrolledY) / elementHeight) * 0.9) + 0.1;
             return opacity;
         }
