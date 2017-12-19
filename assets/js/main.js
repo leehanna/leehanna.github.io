@@ -1,7 +1,7 @@
 
 $(window).scroll(function() {
     var scrolledY = $(this).scrollTop();
-    $('#home-header').css('top','+'+ ((scrolledY/5)) + 'px');
+    $('#home-header').css('top','+'+ (scrolledY/15) + 'px');
     $('#works').css({
         opacity: function() {
             // var e = document.querySelector('.square');
