@@ -112,6 +112,11 @@ a, p, li, h1 {
 	color: $highlight-color;
 }
 
+.desc-fontstyle {
+	font-family: $font-secondary;
+	font-size: 15px;
+}
+
 .bordered {
 	border: 1px solid $light-gray;
 }
@@ -129,7 +134,15 @@ a, p, li, h1 {
 
 .divider {
 	width: 70px;
-	margin: 20px 0;
+	margin: 30px 0;
+}
+
+.light-divider {
+	background-color: $light-gray;
+	height: 1px;
+	width: 300px;
+	margin-bottom: 30px;
+	display: inline-block;
 }
 
 .growing-divider {
@@ -148,14 +161,14 @@ main.container {
 }
 
 .lnr-big {
-	font-size: 35px;
+	font-size: 30px;
 	color: $highlight-color;
-	width: 35px;
+	width: 30px;
 	margin-right: 15px;
 }
 
 .lnr-huge {
-	font-size: 45px;
+	font-size: 35px;
 	display: inline-block;
 }
 
@@ -169,12 +182,13 @@ main.container {
 	display: inline-block;
 	width: 125px;
 	background-color: white;
+	text-align: center;
 	p {
 		font-size: 10px;
 		vertical-align: top;
 	}
 	span {
-		font-size: 14px;
+		font-size: 10px;
 		margin-right: 5px;
 	}
 	@include compatible-transition(all, 0.2s, ease);
@@ -231,7 +245,7 @@ main.container {
 	display: block;
 }
 
-#home-about {
+#about {
 	text-align: center;
 	padding: 100px 20px 70px 20px;
 	background-color: $bg-color;
@@ -241,16 +255,14 @@ main.container {
 	}
 }
 
-#home-about-container {
+#about-container {
 	max-width: 570px;
 	margin: 0 10px;
 	padding: 60px 40px;
 	display: inline-block;
 }
 
-#home-about-desc {
-	font-family: $font-secondary;
-	font-size: 14px;
+#about-desc {
 	margin: 0 auto 30px auto;
 	display: block;
 	max-width: 500px;
@@ -479,55 +491,50 @@ main.container {
 
 // ----------- profile -----------
 
-#about-header {
-	margin: 50px auto 60px auto;
-	width: 100%;;
-	max-width: 650px;
+#profile-container {
+	width: 85%;
+	max-width: 800px;
+	margin: 0 auto;
+	.section-header {
+		text-align: left;
+		letter-spacing: 2px;
+	}
 	img {
 		max-width: 250px;
-		width: 100%;
-		margin-bottom: 30px;
+		margin: 0 auto;
+		display: block;
 	}
-	.header-fontstyle {
-		color: $highlight-color;
+	.desc-fontstyle {
+		margin: 5px 0px;
 	}
 }
 
-#about-container {
-	p, li, h5 {
+#profile-header {
+	margin: 50px 0 10px 0;
+	text-align: center;
+}
+
+#profile-title {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#profile-container {
+	h4, h5 {
 		color: $dark-gray;
-	}
-	span, h4 {
-		color: $highlight-color;
-	}
-	p, li, h5 {
-		font-family: $font-secondary;
-	}
-	p, li {
-		font-weight: 300;
-		font-size: 14px;
 	}
 	h5 {
 		margin-top: 15px;
 		margin-bottom: 10px;	
-		font-size: 14px;	
-	}
-	p {
-		padding: 0;
-		margin: 0;
-	}
-	h5 {
+		font-size: 15px;
+		font-family: $font-secondary;
 		font-weight: 600;
 	}
 	#pencil {
 		margin: 0 auto;
-		line-height: 45px;
+		line-height: 35px;
 		vertical-align: middle;
 	}
-}
-
-#about-desc {
-	margin: 20px 0;
 }
 
 #resume-link {
