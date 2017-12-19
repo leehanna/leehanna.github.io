@@ -6,10 +6,14 @@ id: home
 ---
 
 <div id="home-header">
-	<p id="hero-fontstyle">I'm <b>Hanna</b>, a UI/UX designer and developer. I also enjoy crafting brand identities and marketing materials.</p>
+	<p class="hero-fontstyle" id="hero-header">I'm <b>Hanna</b>,<br/>
+		a UI/UX designer and developer.</p>		
+	<p class="hero-fontstyle" id="hero-desc">I also enjoy crafting brand identities and marketing materials, and I am excited by mindful, intuitive designs.</p>
 	<div class="divider"></div>
+
 </div>
-<div id="works">
+<div id="works" class="grid-12">
+	<h1 class="section-header header-fontstyle">Work</h1>
 	<div class="grid-4 m-grid-6 s-grid-12 pad-1-right s-pad-0-right">
 		<a href={{ "portfolio/goodmarket" | relative_url }}>
 			<div class="marg-2-vert workbox square">
@@ -116,6 +120,14 @@ id: home
 				</div>
 			</div>
 		</a>
-		
 	</div>
+</div>
+<div id="home-about" class="grid-12">
+	<h1 class="section-header header-fontstyle">About</h1>
+	<p id="home-about-desc">Hello, my name is Hanna Lee and I am passionate about designing and building intuitive, beautiful digital products. I’ve been designing since 2011, and have previously developed websites on Craft CMS, Jekyll, and React.js.</p>
+	<a href="/profile">
+		<div class="btn">
+			<p class="header-fontstyle">More about me</p>
+		</div>
+	</a>
 </div>

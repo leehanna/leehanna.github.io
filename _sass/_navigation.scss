@@ -17,7 +17,7 @@
   }
 }
 
-#logo:hover, #loader {
+#nav-logo:hover {
   path, .cls-1, .cls-2 {
     animation: draw 3s infinite;
   }
@@ -61,7 +61,7 @@
   }
 }
 
-#logo {
+#nav-logo {
   a {
     text-decoration: none;
   }
@@ -100,7 +100,7 @@
 
     @include compatible-transition(height, 0.3s, linear);
 
-    #logo, nav {
+    #nav-logo, nav {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);

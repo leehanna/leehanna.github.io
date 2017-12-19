@@ -138,7 +138,7 @@ a, p, li, h1 {
 
 main.container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 100px;
@@ -161,31 +161,88 @@ main.container {
 	text-align: center;
 }
 
+.btn {
+	padding: 10px 0;
+	border: 1px solid $dark-gray;
+	display: inline-block;
+	width: 125px;
+	background-color: white;
+	p {
+		font-size: 10px;
+		vertical-align: top;
+	}
+	span {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+	@include compatible-transition(all, 0.2s, ease);
+}
+
+.btn:hover, .btn:focus {
+	background-color: $highlight-color;
+	cursor: pointer;
+	p, span {
+		color: white;
+	}
+}
+
 // -------------- homepage --------------
 
 #home-header {
+	margin: 100px auto 100px auto;
+	max-width: 600px;
 	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 130px;
+	padding: 0 20px;
 }
 
-#hero-fontstyle {
+.hero-fontstyle {
 	font-weight: 300;
-	max-width: 570px;
 	width: 100%;
-	margin: 0px auto 10px auto;
-	padding: 0 20px;
-	font-size: 26px;
 	b {
 		font-weight: 500;
 	}
 }
 
+#hero-header {
+	font-size: 35px;
+}
+
 #hero-desc {
-	font-size: 12px;
-	color: $highlight-color;
-	margin-top: 10px;
-	text-transform: uppercase;
+	font-size: 18px;
+	margin: 15px auto;
+	max-width: 500px;
+}
+
+.header-fontstyle.section-header {
+	font-weight: 700;
+	color: $dark-gray;
+	font-size: 16px;
+	letter-spacing: 4px;
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+	display: block;
+}
+
+#home-about {
+	text-align: center;
+	margin: 125px 0 50px 0;
+	padding: 0 20px;
+}
+
+#home-about-container {
+	max-width: 570px;
+	margin: 0 10px;
+	padding: 60px 40px;
+	display: inline-block;
+	box-shadow: 0px -5px 40px white;
+}
+
+#home-about-desc {
+	font-family: $font-secondary;
+	font-size: 14px;
+	margin: 0 auto 30px auto;
+	display: block;
 }
 
 
@@ -193,7 +250,6 @@ main.container {
 
 #works {
 	position: relative;
-	overflow: overlay;
 }
 
 .workbox {
@@ -348,42 +404,34 @@ main.container {
 }
 
 
-// footer
+// ---------------- footer ----------------
 
 #footer {
 	position: relative;
 	text-align: center;
 	padding: 70px 0px;
+	.btn {
+		border: none;
+	}
 }
 
-.btn {
-	padding: 10px 0;
-	border: 1px solid $dark-gray;
-	display: inline-block;
-	width: 125px;
-	p {
-		font-size: 10px;
-		vertical-align: top;
+#footer-container {
+	background: url({{ "assets/images/background_photo.jpg" | relative_url }}) no-repeat center;
+	background-size: cover;
+	padding: 100px 20px;
+	margin-bottom: 40px;
+	#or {
+		padding: 20px 0;
 	}
-	span {
-		font-size: 14px;
-		margin-right: 5px;
-	}
-	@include compatible-transition(all, 0.2s, ease);
 }
 
-.btn:hover, .btn:focus {
-	background-color: $highlight-color;
-	cursor: pointer;
-	p, span {
-		color: white;
-	}
+.white {
+	color: white !important;
 }
 
 #social-media {
 	display: block;
-	margin: 15px auto;
-
+	margin: 30px auto;
 }
 
 .social-media-icon {
