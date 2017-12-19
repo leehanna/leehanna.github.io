@@ -4,12 +4,14 @@ $(window).scroll(function() {
     $('#home-header').css('top','+'+ ((scrolledY/5)) + 'px');
     $('#works').css({
         opacity: function() {
-            var elementHeight = $(this).height(),
+            // var e = document.querySelector('.square');
+            // var elementHeight = window.getComputedStyle(e).height / 2;
+            var elementHeight = $('.workbox.square').first().height()/2,
             opacity = ((1 - (elementHeight - scrolledY) / elementHeight) * 0.9) + 0.1;
             return opacity;
         }
     });
-    if ($(document).scrollTop() > 40) {
+    if (scrolledY > 40) {
         $('#navigation').addClass('shrink');
     } else {
         $('#navigation').removeClass('shrink');
@@ -29,21 +31,9 @@ function getParameterByName(name, url) {
 
 // Give the parameter a variable name
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function () {
 	var msg = getParameterByName('msg');
 	if (msg == 'success') {
 		$('#success-msg').show();
 	} 
-
-    $(window).bind('scroll', function(e){
-        var scrolledY = $(this).scrollTop();
-        $('#home-header').css('top','+'+ ((scrolledY/5)) + 'px');
-        $('#works').css({
-            opacity: function() {
-                var elementHeight = $('.workbox.square').height()/2,
-                opacity = ((1 - ((elementHeight - scrolledY) / elementHeight)) * 0.9) + 0.1;
-                return opacity;
-            }
-        });
-    });
 });
