@@ -11,9 +11,11 @@ project_name_pretty:
 ---
 <div id="works-container">
 	<div id="works-header">
-		<img src={{ site.imagesurl | append: page.slug | append: "/" | append: page.logo_filename | relative_url }}>
-		<p id="work-description" class="header-fontstyle"><b>{{ layout.project_name_pretty[page.slug] }}:</b> {{ page.description }}</p>
+		<p class="title-fontstyle">{{ layout.project_name_pretty[page.slug] }}</p>
+		<p id="work-description">{{ page.description }}</p>
 		<div class="divider"></div>
+		<!--<img src={{ site.imagesurl | append: page.slug | append: "/" | append: page.logo_filename | relative_url }}>-->
+
 	</div>
 
 	<div id="works-overview" class="grid-12">

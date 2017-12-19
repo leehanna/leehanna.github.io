@@ -117,6 +117,11 @@ a, p, li, h1 {
 	font-size: 15px;
 }
 
+.title-fontstyle {
+	font-size: 30px;
+	font-weight: 300;
+}
+
 .bordered {
 	border: 1px solid $light-gray;
 }
@@ -511,11 +516,6 @@ main.container {
 #profile-header {
 	margin: 50px 0 10px 0;
 	text-align: center;
-}
-
-#profile-title {
-	font-size: 30px;
-	font-weight: 300;
 }
 
 #profile-container {
