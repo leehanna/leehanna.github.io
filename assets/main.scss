@@ -484,10 +484,11 @@ main.container {
 	background-size: contain;
 	display: inline-block;
 	line-height: 30px;
-	svg path {
-		@include compatible-transition(fill, 0.5s, ease);
-		fill: $dark-gray;
-	}
+}
+
+.social-media-icon > svg patj {
+	@include compatible-transition(fill, 0.5s, ease);
+	fill: $dark-gray;
 }
 
 .social-media-icon:hover, .social-media-icon:focus {
