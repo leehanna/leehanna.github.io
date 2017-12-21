@@ -40,13 +40,25 @@
 	right: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+	.binderclip {
+		height: 50px;
+		top: -35px;
+	}
+	#binderclip-left {
+		left: 15px;
+	}
+
+	#binderclip-right {
+		right: 15px;
+	}
+}
+
 .overview-item {
-	@include flex;
-	-webkit-flex-direction: row; 
-  	flex-direction: row;
   	padding: 15px 0;
 
   	ul {
+  		margin: 0;
   		padding-left: 20px;
   	}
 

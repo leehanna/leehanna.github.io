@@ -9,6 +9,7 @@ project_name_pretty:
   "nyonyum" : "Friends Interational"
   "thetatau" : "Theta Tau"
 ---
+
 <div id="works-container">
 	<div id="works-header">
 		<p class="title-fontstyle">{{ layout.project_name_pretty[page.slug] }}</p>
@@ -23,50 +24,38 @@ project_name_pretty:
 		<img src={{ "assets/images/binderclip.png" | relative_url }} class="binderclip" id="binderclip-right">
 		<div class="grid-6 s-grid-12 pad-2 s-pad-1">
 			<div class="overview-item">
-				<span class="lnr lnr-coffee-cup lnr-big"></span>
-				<div>
-					<h4 class="header-fontstyle">Brief</h4>
-					<p>{{ page.brief }}</p>
-					{% if page.brief_links %}
-						<ul id="brief-links">
-							{% for lnk in page.brief_links %}
-								<li><span class="lnr lnr-link"></span><a href={{ lnk[1] }} class="link-fontstyle">{{ lnk[0] }}</a></li>
-							{% endfor %}
-						</ul>
-					{% endif %}
-				</div>
+				<h4 class="header-fontstyle"><span class="lnr lnr-coffee-cup lnr-big"></span>Brief</h4>
+				<p>{{ page.brief }}</p>
+				{% if page.brief_links %}
+					<ul id="brief-links">
+						{% for lnk in page.brief_links %}
+							<li><span class="lnr lnr-link"></span><a href={{ lnk[1] }} class="link-fontstyle">{{ lnk[0] }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</div>
 			<div class="overview-item">
-				<span class="lnr lnr-mustache lnr-big"></span>
-				<div>
-					<h4 class="header-fontstyle">My Role &amp; Time Spent</h4>
-					<p>{{ page.my_role }}</p>
-					<p id="time-spent"><span class="lnr lnr-hourglass"></span>{{ page.time_spent }}</p>
-				</div>
+				<h4 class="header-fontstyle"><span class="lnr lnr-mustache lnr-big"></span>My Role</h4>
+				<p>{{ page.my_role }}</p>
+				<p id="time-spent"><span class="lnr lnr-hourglass"></span>{{ page.time_spent }}</p>
 			</div>
 		</div>
 		<div class="overview-col grid-6 s-grid-12 pad-2 s-pad-1">
 			<div class="overview-item">
-				<span class="lnr lnr-construction lnr-big"></span>
-				<div>
-					<h4 class="header-fontstyle">Objectives &amp; Challenges</h4>
-					<ul>
-					{% for obj in page.objectives %}
-					    <li>{{ obj }}</li>
-					{% endfor %}
-					</ul>
-				</div>
+				<h4 class="header-fontstyle"><span class="lnr lnr-construction lnr-big"></span>Objectives</h4>
+				<ul>
+				{% for obj in page.objectives %}
+				    <li>{{ obj }}</li>
+				{% endfor %}
+				</ul>
 			</div>
 			<div class="overview-item">
-				<span class="lnr lnr-magic-wand lnr-big"></span>
-				<div>
-					<h4 class="header-fontstyle">Methods / Tools</h4>
-					<ul>
-					{% for t in page.tools %}
-					    <li>{{ t }}</li>
-					{% endfor %}
-					</ul>
-				</div>
+				<h4 class="header-fontstyle"><span class="lnr lnr-magic-wand lnr-big"></span>Tools</h4>
+				<ul>
+				{% for t in page.tools %}
+				    <li>{{ t }}</li>
+				{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</div>
