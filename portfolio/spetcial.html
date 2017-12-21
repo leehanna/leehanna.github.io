@@ -32,23 +32,10 @@ related_works: [healthandlove, goodmarket, swdb]
 ---
 {% assign imagefolderurl = site.imagesurl | append: page.slug | append: "/" | relative_url %}
 <div class="work-section grid-12">
-	<div class="grid-4 s-grid-12">
-		<div class="img-container">
-			<img src={{ imagefolderurl | append: "petpal_iphone_newsfeed.png" }}>
-		</div>
-	</div>
-	<div class="grid-4 s-grid-12">
-		<div class="img-container">
-			<img src={{ imagefolderurl | append: "petpal_iphone_final_profile.png" }}>
-		</div>
-	</div>
-	<div class="grid-4 s-grid-12">
-		<div class="img-container">
-			<img src={{ imagefolderurl | append: "petpal_iphone_settings.png" }}>
-		</div>
+	<div class="img-container">
+		<img src={{ imagefolderurl | append: "spetcial_final_product.jpg" }}>
 	</div>
 </div>
-
 <div class="work-section grid-12">
 	<h2 class="header-fontstyle">1. Establishing a brand identity</h2>
 	<h4 class="subheader-fontstyle">The Problem</h4>
@@ -97,29 +84,22 @@ related_works: [healthandlove, goodmarket, swdb]
 	<p>Given a long list of items that the team wanted to see in the user profile page, I closely analyzed how the most successful social media platforms such as Facebook and Instagram managed to fit so much information without overwhelming the user.</p>
 	<h4 class="subheader-fontstyle">Mobile Profile UI Design Development</h4>
 	<p>I went through several versions of the profile UI; to improve upon each version, I continually researched existing UI trends and tested the mockups with users.</p>
-	<div class="grid-4 s-grid-12 pad-2 s-pad-0">
-		<div class="img-container bordered">
-			<img src={{ imagefolderurl | append: "petpal_ios_v3-1.png" }}>
+	<div class="grid-12">
+		<div class="img-container">
+			<img src={{ imagefolderurl | append: "spetcial_profile_progression.jpg"}}>
 		</div>
-		<p>Users were overwhelmed with how crammed everything was when only half the screen was allotted for the profile information. It was also not clear to users what the icons meant without their label.</p>
 	</div>
-	<div class="grid-4 s-grid-12 pad-2 s-pad-0">
-		<div class="img-container bordered">
-			<img src={{ imagefolderurl | append: "petpal_ios_v3-2.png" }}>
-		</div>
-		<p>I switched out the icons to emphasize the numbers instead, and grouped the new action items together. Testing revealed that people could not read the letters at all, and while they noted that the grouping of the action items made sense, they also said that it was too cluttered overall.</p>
-	</div>
-	<div class="grid-4 s-grid-12 pad-2 s-pad-0">
-		<div class="img-container bordered">
-			<img src={{ imagefolderurl | append: "petpal_ios_v3-4.png" }}>
-		</div>
-		<p>After much discussion, I decided to allot more screen space to the profile information. In this version, I visually differentiated the basic profile description, action items, and information that can be pressed for more information. Users were confused by the circle icons hanging next to the profile photo.</p>
+	<h4 class="subheader-fontstyle">Profile Version 1</h4>
+	<p>Users were overwhelmed with how crammed everything was when only half the screen was allotted for the profile information. It was also not clear to users what the icons meant without their label.</p>
+	<h4 class="subheader-fontstyle">Profile Version 2</h4>
+	<p>I switched out the icons to emphasize the numbers instead, and grouped the new action items together. Testing revealed that people could not read the letters at all, and while they noted that the grouping of the action items made sense, they also said that it was too cluttered overall.</p>
+	<h4 class="subheader-fontstyle">Profile Version 3</h4>
+	<p>After much discussion, I decided to allot more screen space to the profile information. In this version, I visually differentiated the basic profile description, action items, and information that can be pressed for more information. Users were confused by the circle icons hanging next to the profile photo.</p>
+	<div class="img-container">
+		<img class="img-mobile-screen" src={{ imagefolderurl | append: "spetcial_final_profile.jpg" }}>
 	</div>
 	<h4 class="subheader-fontstyle extra-top-space">Mobile Profile UI Final Design</h4>
 	<p>After adding labels, shifting around the action items, omitting the option to view the number of treats, and adding a cover photo background for additional personalization, this was the final version of the mobile profile UX.</p>
-	<div class="img-container">
-		<img class="img-mobile-screen" src={{ imagefolderurl | append: "petpal_iphone_final_profile.png" }}>
-	</div>
 	<h4 class="subheader-fontstyle">UI/UX Mockups</h4>
 	<p>Concurrently, I was quickly designing the UI/UX of other screens so that the developers could have a basic vision of what the different parts of the app should look like. I based the mockups on my research and analysis of the usability of other social media applications.</p>
 	<a href={{ imagefolderurl | append: "petpal_ios_v3_all.pdf"}} target="_blank">
