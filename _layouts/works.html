@@ -15,10 +15,10 @@ project_name_pretty:
 		<p class="title-fontstyle">{{ layout.project_name_pretty[page.slug] }}</p>
 		<p class="title-desc-fontstyle">{{ page.description }}</p>
 		<div class="divider"></div>
-		<!--<img src={{ site.imagesurl | append: page.slug | append: "/" | append: page.logo_filename | relative_url }}>-->
-
 	</div>
-
+	<div id="work-demo">
+		<img src={{ site.imagesurl | append: page.slug | append: "/" | append: page.demo_filename | relative_url }}>
+	</div>
 	<div id="works-overview" class="grid-12">
 		<img src={{ "assets/images/binderclip.png" | relative_url }} class="binderclip" id="binderclip-left">
 		<img src={{ "assets/images/binderclip.png" | relative_url }} class="binderclip" id="binderclip-right">
