@@ -8,6 +8,15 @@ project_name_pretty:
   "adestefideles" : "Adeste Fideles"
   "nyonyum" : "Friends Interational"
   "thetatau" : "Theta Tau"
+works_order: [ goodmarket, swdb, spetcial, healthandlove, adestefideles, thetatau, nyonyum ]
+works_order_dict:
+  "goodmarket" : 0
+  "swdb" : 1
+  "spetcial" : 2
+  "healthandlove" : 3
+  "adestefideles" : 4
+  "thetatau" : 5
+  "nyonyum" : 6
 ---
 
 <div id="works-container">
@@ -65,7 +74,7 @@ project_name_pretty:
 	</div>
 
 	<div id="more-works" class="grid-12">
-		<h3 class="header-fontstyle">More Works</h3>
+		<h3 class="header-fontstyle">Other Work</h3>
 		<div class="divider"></div>
 		<div id="more-works-container" class="grid-12">
 			{% for work in page.related_works %}
@@ -86,4 +95,13 @@ project_name_pretty:
 			{% endfor %}
 		</div>
 	</div>
+
+	<!--{% assign curr_idx = layout.works_order_dict[page.slug] %}
+	{% assign prev_work_idx = curr_idx | minus:1 | modulo:layout.works_order.size%}
+	{% assign next_work_idx = curr_idx | plus:1 | modulo:layout.works_order.size%}
+	<div id="works-navigation">
+		<p>{{ curr_idx }} - {{ layout.works_order[curr_idx] }}</p>
+		<p>{{ prev_work_idx }} - {{ layout.works_order[prev_work_idx] }}</p>
+		<p>{{ next_work_idx }} - {{ layout.works_order[next_work_idx] }}</p>
+	</div>-->
 </div>
