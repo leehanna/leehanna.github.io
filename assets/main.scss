@@ -248,13 +248,6 @@ main.container {
 	max-width: 500px;
 }
 
-#hero-loc {
-	font-size: 13px;
-	span {
-		margin-right: 5px;
-	}
-}
-
 .header-fontstyle.section-header {
 	font-weight: 700;
 	color: $dark-gray;
@@ -527,6 +520,9 @@ main.container {
 	}
 	.desc-fontstyle {
 		margin: 5px 0px;
+	}
+	span {
+		margin-right: 5px;
 	}
 }
 
