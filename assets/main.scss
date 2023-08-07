@@ -119,7 +119,7 @@ a, p, li, h1 {
 
 .title-fontstyle {
 	font-size: 30px;
-	font-weight: 300;
+	font-weight: 700;
 }
 
 .title-desc-fontstyle {
@@ -239,13 +239,14 @@ main.container {
 }
 
 #hero-header {
+	font-weight: 700;
 	font-size: 35px;
 }
 
 #hero-desc {
 	font-size: 18px;
 	margin: 15px auto;
-	max-width: 500px;
+	max-width: 400px;
 }
 
 .header-fontstyle.section-header {

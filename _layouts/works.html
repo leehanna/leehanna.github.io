@@ -46,7 +46,9 @@ works_order_dict:
 			<div class="overview-item">
 				<h4 class="header-fontstyle"><span class="lnr lnr-mustache lnr-big"></span>My Role</h4>
 				<p>{{ page.my_role }}</p>
-				<p id="time-spent"><span class="lnr lnr-hourglass"></span>{{ page.time_spent }}</p>
+				{% if page.time_spent %}
+					<p id="time-spent"><span class="lnr lnr-hourglass"></span>{{ page.time_spent }}</p>
+				{% endif %}
 			</div>
 		</div>
 		<div class="overview-col grid-6 s-grid-12 pad-2 s-pad-1">
